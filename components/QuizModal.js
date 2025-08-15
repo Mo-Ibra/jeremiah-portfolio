@@ -159,7 +159,7 @@ const QuizModal = ({ isOpen, onClose }) => {
                 <h4 className="quiz-question">What is your website domain?</h4>
                 <div className="quiz-input-group">
                   <input
-                    type="url"
+                    type="text"
                     className="quiz-input"
                     placeholder="https://yourwebsite.com"
                     value={formData.website}

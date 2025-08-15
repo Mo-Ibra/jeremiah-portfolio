@@ -4221,6 +4221,7 @@ nav.dark-section .mobile-menu-toggle span {
   max-width: 300px;
   margin: 0 auto;
   display: block;
+  margin-top: 30px;
 }
 
 @media (hover: hover) {
@@ -4242,8 +4243,8 @@ nav.dark-section .mobile-menu-toggle span {
 /* Success State */
 .quiz-success {
   text-align: center;
-  padding: clamp(3rem, 6vw, 4rem) clamp(1.5rem, 3vw, 2rem);
   display: none;
+  padding-bottom: 30px;
 }
 
 .quiz-success.active {
