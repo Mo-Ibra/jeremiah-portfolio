@@ -4,7 +4,7 @@ const About = () => {
       <div className="about">
         <div className="about-card">
           <div className="about-image">
-            <img src="https://via.placeholder.com/150" alt="Your Photo" />
+            <img src="https://fast.wistia.com/embed/medias/hisd0uu37o/swatch" alt="Your Photo" />
           </div>
           <div className="about-content">
             <h3>About Me</h3>

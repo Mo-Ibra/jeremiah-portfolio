@@ -1,4 +1,53 @@
+"use client";
+
+import { useEffect } from "react";
+
+/**
+ * The Hero component is a high-level component that provides a hero section for the page.
+ * It contains various sub-components such as floating metrics, trust strip, and call-to-actions.
+ * The component uses window scroll event to update the parallax effect on the floating metrics and trust strip.
+ * The component also includes a trust strip that displays the number of Shopify brands that trust the company.
+ *
+ * @return {JSX.Element} The Hero component.
+ */
 const Hero = () => {
+  
+  useEffect(() => {
+    function updateParallax() {
+      const scrollY = window.scrollY;
+      const parallaxElements = document.querySelectorAll(".parallax-layer");
+      parallaxElements.forEach((el, index) => {
+        const depth = index * 0.05;
+        el.style.transform = `translateY(${scrollY * depth}px)`;
+      });
+    }
+
+    function init3DEffects() {
+      if (window.matchMedia("(hover: hover)").matches) {
+        document.addEventListener("mousemove", (e) => {
+          const x = (e.clientX / window.innerWidth - 0.5) * 2;
+          const y = (e.clientY / window.innerHeight - 0.5) * 2;
+
+          const metrics = document.querySelectorAll(".metric-badge");
+          metrics.forEach((metric, index) => {
+            const speed = 0.5 + index * 0.1;
+            metric.style.transform = `${metric.style.transform} translateX(${
+              x * 10 * speed
+            }px) translateY(${y * 10 * speed}px)`;
+          });
+        });
+      }
+    }
+
+    window.addEventListener("scroll", updateParallax);
+    init3DEffects();
+
+    return () => {
+      window.removeEventListener("scroll", updateParallax);
+      document.removeEventListener("mousemove", () => {});
+    };
+  }, []);
+
   return (
     <section id="hero" className="hero">
       <div className="particles" id="particles"></div>
@@ -61,7 +110,13 @@ const Hero = () => {
           className="hero-decorative-right"
           style={{ display: "flex", alignItems: "center" }}
         >
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+            }}
+          >
             <svg
               width="0"
               height="0"

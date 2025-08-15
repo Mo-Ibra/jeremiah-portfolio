@@ -1,11 +1,28 @@
+"use client";
+
+import { useEffect } from "react";
+
 const Preload = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      document.getElementById("preloader").classList.add("loaded");
+    }, 1500);
+  }, []);
+
   return (
     <div className="preloader" id="preloader">
       <div className="preloader-content">
         <div className="preloader-logo">
           <div className="preloader-circle"></div>
           <svg
-            style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: "40px", height: "40px", }}
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "40px",
+              height: "40px",
+            }}
             viewBox="0 0 100 100"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

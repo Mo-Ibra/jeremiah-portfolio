@@ -10,6 +10,7 @@ import Principles from "@/components/Principles";
 import Faqs from "@/components/Faqs";
 import Contact from "@/components/Contact";
 import QuizModal from "@/components/QuizModal";
+import Navigation from "@/components/Navigation";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <CustomCursor />
       <NoiseOverlay />
       <Preload />
+      <Navigation />
       <Hero />
       <VideoReels />
       <Services />
