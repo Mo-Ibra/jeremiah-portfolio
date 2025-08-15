@@ -12,15 +12,10 @@ const Portfolio = () => {
         <div className="portfolio-reels-grid">
           <div className="portfolio-reel-card">
             <div className="portfolio-reel-wrapper" style={{ aspectRatio: "9/16" }}>
-              <video
-                className="portfolio-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="portfolio-video1.mp4" type="video/mp4" />
-              </video>
+              <div
+                className="wistia_embed wistia_async_glq2nisk1j autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
               <div className="portfolio-overlay">
                 <div className="portfolio-info">
                   <span className="portfolio-metric">8.2M reach</span>
@@ -32,15 +27,10 @@ const Portfolio = () => {
 
           <div className="portfolio-reel-card">
             <div className="portfolio-reel-wrapper" style={{ aspectRatio: "9/13" }}>
-              <video
-                className="portfolio-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="portfolio-video2.mp4" type="video/mp4" />
-              </video>
+              <div
+                className="wistia_embed wistia_async_0l19efg1jt autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
               <div className="portfolio-overlay">
                 <div className="portfolio-info">
                   <span className="portfolio-metric">320% ROAS</span>
@@ -52,15 +42,10 @@ const Portfolio = () => {
 
           <div className="portfolio-reel-card">
             <div className="portfolio-reel-wrapper" style={{ aspectRatio: "9/11" }}>
-              <video
-                className="portfolio-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="portfolio-video3.mp4" type="video/mp4" />
-              </video>
+              <div
+                className="wistia_embed wistia_async_s3pthor4vn autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
               <div className="portfolio-overlay">
                 <div className="portfolio-info">
                   <span className="portfolio-metric">$1.2M revenue</span>
@@ -72,15 +57,10 @@ const Portfolio = () => {
 
           <div className="portfolio-reel-card">
             <div className="portfolio-reel-wrapper" style={{ aspectRatio: "9/16" }}>
-              <video
-                className="portfolio-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="portfolio-video4.mp4" type="video/mp4" />
-              </video>
+              <div
+                className="wistia_embed wistia_async_dkzw4n1wr0 autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
               <div className="portfolio-overlay">
                 <div className="portfolio-info">
                   <span className="portfolio-metric">45% CTR boost</span>

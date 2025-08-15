@@ -1,4 +1,19 @@
+import { useEffect } from "react";
+
 const VideoReels = () => {
+  useEffect(() => {
+    if (
+      !document.querySelector(
+        'script[src="https://fast.wistia.com/assets/external/E-v1.js"]'
+      )
+    ) {
+      const script = document.createElement("script");
+      script.src = "https://fast.wistia.com/assets/external/E-v1.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <section id="video-reels" className="video-reels">
       <div className="particles" id="particles"></div>
@@ -6,15 +21,11 @@ const VideoReels = () => {
         <div className="reels-grid">
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
-              <video
-                className="reel-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="video1.mp4" type="video/mp4" />
-              </video>
+              <div
+                className="wistia_embed wistia_async_lbokfo5iv3 autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
+
               <div className="reel-overlay">
                 <div className="reel-info">
                   <span className="reel-metric">2.3M views</span>
@@ -26,15 +37,10 @@ const VideoReels = () => {
 
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/12" }}>
-              <video
-                className="reel-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="video2.mp4" type="video/mp4" />
-              </video>
+              <div
+                className="wistia_embed wistia_async_69qiuv07hz autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
               <div className="reel-overlay">
                 <div className="reel-info">
                   <span className="reel-metric">1.8M views</span>
@@ -46,15 +52,10 @@ const VideoReels = () => {
 
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/10" }}>
-              <video
-                className="reel-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="video3.mp4" type="video/mp4" />
-              </video>
+              <div
+                className="wistia_embed wistia_async_ktw4hsumt8 autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
               <div className="reel-overlay">
                 <div className="reel-info">
                   <span className="reel-metric">3.5M views</span>
@@ -65,16 +66,11 @@ const VideoReels = () => {
           </div>
 
           <div className="reel-card">
-            <div className="reel-wrapper" style={{  aspectRatio: "9/16" }}>
-              <video
-                className="reel-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="video4.mp4" type="video/mp4" />
-              </video>
+            <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
+              <div
+                className="wistia_embed wistia_async_n3q3weig8v autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
               <div className="reel-overlay">
                 <div className="reel-info">
                   <span className="reel-metric">925K views</span>
@@ -86,15 +82,10 @@ const VideoReels = () => {
 
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/14" }}>
-              <video
-                className="reel-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="video5.mp4" type="video/mp4" />
-              </video>
+              <div
+                className="wistia_embed wistia_async_1ku3mu07k8 autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
               <div className="reel-overlay">
                 <div className="reel-info">
                   <span className="reel-metric">1.2M views</span>
@@ -105,16 +96,11 @@ const VideoReels = () => {
           </div>
 
           <div className="reel-card">
-            <div className="reel-wrapper" style={{  aspectRatio: "9/11" }}>
-              <video
-                className="reel-video"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              >
-                <source src="video6.mp4" type="video/mp4" />
-              </video>
+            <div className="reel-wrapper" style={{ aspectRatio: "9/11" }}>
+              <div
+                className="wistia_embed wistia_async_dorz4lqu14 autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
               <div className="reel-overlay">
                 <div className="reel-info">
                   <span className="reel-metric">4.1M views</span>
