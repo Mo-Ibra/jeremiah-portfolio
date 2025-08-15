@@ -1,3 +1,5 @@
+"use client";
+
 import CustomCursor from "@/components/CustomCursor";
 import Hero from "@/components/Hero";
 import NoiseOverlay from "@/components/NoiseOverlay";
@@ -12,8 +14,33 @@ import Contact from "@/components/Contact";
 import QuizModal from "@/components/QuizModal";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isQuizOpen, setIsQuizOpen] = useState(false);
+
+  const openQuiz = () => {
+    setIsQuizOpen(true);
+  };
+
+  const closeQuiz = () => {
+    setIsQuizOpen(false);
+  };
+
+  // Handle body overflow when modal opens/closes
+  useEffect(() => {
+    if (isQuizOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    // Clean up on unmount
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isQuizOpen]);
+
   return (
     <>
       <CustomCursor />
@@ -27,8 +54,8 @@ export default function Home() {
       <About />
       <Principles />
       <Faqs />
-      <Contact />
-      <QuizModal />
+      <Contact onOpenQuiz={openQuiz} />
+      <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} />
       <Footer />
     </>
   );
