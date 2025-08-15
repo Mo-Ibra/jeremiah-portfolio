@@ -98,7 +98,7 @@ const QuizModal = ({ isOpen, onClose }) => {
         </div>
         
         <div className="quiz-header">
-          <h3 className="quiz-title">Let's Create Your Growth Strategy</h3>
+          <h3 className="quiz-title">Let&apos;s Create Your Growth Strategy</h3>
           <p className="quiz-subtitle">Answer a few questions to help us understand your needs</p>
         </div>
         
@@ -176,7 +176,7 @@ const QuizModal = ({ isOpen, onClose }) => {
               
               {/* Step 4: Ad Spend */}
               <div className={`quiz-step ${currentStep === 4 ? 'active' : ''}`}>
-                <h4 className="quiz-question">What's your monthly ad spend?</h4>
+                <h4 className="quiz-question">What&apos;s your monthly ad spend?</h4>
                 <div className="quiz-input-group">
                   <input
                     type="range"
@@ -292,7 +292,7 @@ const QuizModal = ({ isOpen, onClose }) => {
                 Your personalized growth strategy is on its way to your inbox.
               </p>
               <p className="success-note">
-                Please check your spam folder if you don't see it within 5 minutes.
+                Please check your spam folder if you don&apos;t see it within 5 minutes.
               </p>
               <button className="quiz-btn quiz-btn-submit" onClick={closeModal}>
                 Close

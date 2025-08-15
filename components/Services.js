@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Services = () => {
   return (
     <div className="services">
@@ -15,10 +17,11 @@ const Services = () => {
               Product seeding campaigns to collect authentic content & find
               brand ambassadors that never stop CR8TING. ‹
             </p>
-            <img
+            <Image
               src="/images/services/3.jpg"
               alt="Service Image"
-              
+              width={600}
+              height={400}
             />
           </div>
           <div className="service-card">
@@ -27,9 +30,11 @@ const Services = () => {
               High production content that will WOW your customers and ELEV8TE
               your brand.
             </p>
-            <img
+            <Image
               src="/images/services/2.jpg"
               alt="Service Image"
+              width={600}
+              height={400}
             />
           </div>
           <div className="service-card">
@@ -38,9 +43,11 @@ const Services = () => {
               Harnessing the power of AI, we generate hyper-realistic content
               that turns ordinary content into mind-blowing CR8TIVE.
             </p>
-            <img
+            <Image
               src="/images/services/1.jpg"
               alt="Service Image"
+              width={600}
+              height={400}
             />
           </div>
         </div>

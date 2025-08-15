@@ -51,15 +51,16 @@
 //   );
 // };
 
+// export default About;
+
 import Image from "next/image";
 
-// export default About;
 
 const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-container">
-        <h2 className="about-greeting">Hey! I'm</h2>
+        <h2 className="about-greeting">Hey! I&apos;m</h2>
 
         <div className="about-image-wrapper">
           <Image

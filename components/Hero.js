@@ -179,7 +179,7 @@ const Hero = () => {
 
         <div className="hero-cta-buttons">
           <a href="#contact" className="hero-btn hero-btn-primary">
-            I'm Ready To Talk →
+            I&apos;m Ready To Talk →
           </a>
           <a href="#video-reels" className="hero-btn hero-btn-secondary">
             Show Me Some Proof First →

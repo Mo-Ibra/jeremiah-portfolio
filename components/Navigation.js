@@ -173,7 +173,7 @@ const Navigation = () => {
             </li>
             <li>
               <a href="#contact" className="nav-cta">
-                Let's Talk
+                Let&apos;s Talk
               </a>
             </li>
           </ul>
