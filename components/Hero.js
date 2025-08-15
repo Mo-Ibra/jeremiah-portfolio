@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 /**
  * The Hero component is a high-level component that provides a hero section for the page.
@@ -45,25 +45,6 @@ const Hero = () => {
       window.removeEventListener("scroll", updateParallax);
       document.removeEventListener("mousemove", () => {});
     };
-  }, []);
-
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let start = 0;
-    const end = 86;
-    const duration = 2000;
-    const stepTime = Math.abs(Math.floor(duration / end));
-
-    const timer = setInterval(() => {
-      start += 1;
-      setCount(start);
-      if (start === end) {
-        clearInterval(timer);
-      }
-    }, stepTime);
-
-    return () => clearInterval(timer);
   }, []);
 
   return (
@@ -212,7 +193,7 @@ const Hero = () => {
               />
             </svg>
             <div className="trust-divider"></div>
-            <span className="trust-count">{count}</span>
+            <span className="trust-count">86</span>
             <span className="trust-brands">SHOPIFY BRANDS</span>
           </div>
         </div>
