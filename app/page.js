@@ -11,6 +11,7 @@ import Faqs from "@/components/Faqs";
 import Contact from "@/components/Contact";
 import QuizModal from "@/components/QuizModal";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <Faqs />
       <Contact />
       <QuizModal />
+      <Footer />
     </>
   );
 }
