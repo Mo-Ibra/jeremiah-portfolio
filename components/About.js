@@ -51,19 +51,23 @@
 //   );
 // };
 
+import Image from "next/image";
+
 // export default About;
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-container">
         <h2 className="about-greeting">Hey! I'm</h2>
 
         <div className="about-image-wrapper">
-          <img
+          <Image
             src="/images/about/1.png"
             alt="Jeremiah profile photo"
             className="about-image"
+            width={300}
+            height={300}
           />
         </div>
 
