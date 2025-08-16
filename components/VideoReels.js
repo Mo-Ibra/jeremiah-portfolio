@@ -36,7 +36,7 @@ const VideoReels = () => {
           </div>
 
           <div className="reel-card">
-            <div className="reel-wrapper" style={{ aspectRatio: "9/12" }}>
+            <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
                 className="wistia_embed wistia_async_69qiuv07hz autoPlay=false"
                 style={{ height: "100%", width: "100%" }}
@@ -51,7 +51,7 @@ const VideoReels = () => {
           </div>
 
           <div className="reel-card">
-            <div className="reel-wrapper" style={{ aspectRatio: "9/10" }}>
+            <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
                 className="wistia_embed wistia_async_ktw4hsumt8 autoPlay=false"
                 style={{ height: "100%", width: "100%" }}
@@ -81,7 +81,7 @@ const VideoReels = () => {
           </div>
 
           <div className="reel-card">
-            <div className="reel-wrapper" style={{ aspectRatio: "9/14" }}>
+            <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
                 className="wistia_embed wistia_async_1ku3mu07k8 autoPlay=false"
                 style={{ height: "100%", width: "100%" }}
@@ -96,9 +96,39 @@ const VideoReels = () => {
           </div>
 
           <div className="reel-card">
-            <div className="reel-wrapper" style={{ aspectRatio: "9/11" }}>
+            <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
                 className="wistia_embed wistia_async_dorz4lqu14 autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
+              <div className="reel-overlay">
+                <div className="reel-info">
+                  <span className="reel-metric">4.1M views</span>
+                  <span className="reel-platform">Instagram</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="reel-card">
+            <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
+              <div
+                className="wistia_embed wistia_async_b606gkduct autoPlay=false"
+                style={{ height: "100%", width: "100%" }}
+              ></div>
+              <div className="reel-overlay">
+                <div className="reel-info">
+                  <span className="reel-metric">4.1M views</span>
+                  <span className="reel-platform">Instagram</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="reel-card">
+            <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
+              <div
+                className="wistia_embed wistia_async_vb44bp1fb5 autoPlay=false"
                 style={{ height: "100%", width: "100%" }}
               ></div>
               <div className="reel-overlay">

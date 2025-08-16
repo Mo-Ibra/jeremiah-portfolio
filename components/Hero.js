@@ -38,8 +38,23 @@ const Hero = () => {
       }
     }
 
+    function createParticles() {
+      const particlesContainer = document.getElementById("particles");
+      const particleCount = window.innerWidth < 768 ? 25 : 50; // Reduce particles on mobile
+
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement("div");
+        particle.className = "particle";
+        particle.style.left = Math.random() * 100 + "%";
+        particle.style.animationDelay = Math.random() * 10 + "s";
+        particle.style.animationDuration = 10 + Math.random() * 10 + "s";
+        particlesContainer.appendChild(particle);
+      }
+    }
+
     window.addEventListener("scroll", updateParallax);
     init3DEffects();
+    createParticles();
 
     return () => {
       window.removeEventListener("scroll", updateParallax);
@@ -193,7 +208,7 @@ const Hero = () => {
               />
             </svg>
             <div className="trust-divider"></div>
-            <span className="trust-count">86</span>
+            <span className="trust-count">86+</span>
             <span className="trust-brands">SHOPIFY BRANDS</span>
           </div>
         </div>
