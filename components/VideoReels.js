@@ -170,7 +170,7 @@ const VideoReels = () => {
             <div className="reel-testimonial">
               <p>
                 That was an amazing experience. I had a great time and learned a
-                lot. I'm so grateful for the opportunity to work with Jeremiah.
+                lot. I'm so grateful for the opportunity to work with Jeremiah. 
               </p>
               <div className="reel-testimonial-author">
                 <Image
