@@ -19,7 +19,8 @@ const VideoReels = () => {
     <section id="video-reels" className="video-reels">
       <div className="particles" id="particles"></div>
       <div className="video-reels-container">
-        <div className="reels-grid">
+        <div className="reels-grid"
+        >
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
