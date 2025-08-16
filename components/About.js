@@ -64,7 +64,7 @@ const About = () => {
 
         <div className="about-image-wrapper">
           <Image
-            src="/images/about/1.png"
+            src="/images/me.png"
             alt="Jeremiah profile photo"
             className="about-image"
             width={300}

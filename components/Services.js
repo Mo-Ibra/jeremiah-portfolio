@@ -18,7 +18,7 @@ const Services = () => {
               brand ambassadors that never stop CR8TING. ‹
             </p>
             <Image
-              src="/images/services/3.jpg"
+              src="/images/services-2/1.png"
               alt="Service Image"
               width={600}
               height={400}
@@ -31,7 +31,7 @@ const Services = () => {
               your brand.
             </p>
             <Image
-              src="/images/services/2.jpg"
+              src="/images/services-2/2.jpg"
               alt="Service Image"
               width={600}
               height={400}
@@ -44,7 +44,7 @@ const Services = () => {
               that turns ordinary content into mind-blowing CR8TIVE.
             </p>
             <Image
-              src="/images/services/1.jpg"
+              src="/images/services-2/3.jpg"
               alt="Service Image"
               width={600}
               height={400}
