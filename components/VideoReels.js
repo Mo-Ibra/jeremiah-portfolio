@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect } from "react";
 
 const VideoReels = () => {
@@ -22,7 +23,7 @@ const VideoReels = () => {
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
-                className="wistia_embed wistia_async_lbokfo5iv3 autoPlay=false"
+                className="wistia_embed wistia_async_lbokfo5iv3"
                 style={{ height: "100%", width: "100%" }}
               ></div>
 
@@ -33,12 +34,32 @@ const VideoReels = () => {
                 </div>
               </div>
             </div>
+
+            <div className="reel-testimonial">
+              <p>
+                That was an amazing experience. I had a great time and learned a
+                lot. I'm so grateful for the opportunity to work with Jeremiah.
+              </p>
+              <div className="reel-testimonial-author">
+                <Image
+                  src="/images/testimonials/1.jpg"
+                  alt="Testimonial Author"
+                  width={60}
+                  height={60}
+                  className="author-image"
+                />
+                <div className="author-info">
+                  <p className="author-name">Jeremiah Smith</p>
+                  <p className="author-title">CEO, Company Name</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
-                className="wistia_embed wistia_async_69qiuv07hz autoPlay=false"
+                className="wistia_embed wistia_async_69qiuv07hz"
                 style={{ height: "100%", width: "100%" }}
               ></div>
               <div className="reel-overlay">
@@ -53,8 +74,8 @@ const VideoReels = () => {
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
-                className="wistia_embed wistia_async_ktw4hsumt8 autoPlay=false"
-                style={{ height: "100%", width: "100%" }}
+                className="wistia_embed wistia_async_ktw4hsumt8"
+                style={{ height: "100%", width: "100%", aspectRatio: "9/16" }}
               ></div>
               <div className="reel-overlay">
                 <div className="reel-info">
@@ -63,12 +84,13 @@ const VideoReels = () => {
                 </div>
               </div>
             </div>
+
           </div>
 
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
-                className="wistia_embed wistia_async_n3q3weig8v autoPlay=false"
+                className="wistia_embed wistia_async_n3q3weig8v"
                 style={{ height: "100%", width: "100%" }}
               ></div>
               <div className="reel-overlay">
@@ -78,12 +100,33 @@ const VideoReels = () => {
                 </div>
               </div>
             </div>
+
+            
+            <div className="reel-testimonial">
+              <p>
+                That was an amazing experience. I had a great time and learned a
+                lot. I'm so grateful for the opportunity to work with Jeremiah.
+              </p>
+              <div className="reel-testimonial-author">
+                <Image
+                  src="/images/testimonials/2.jpg"
+                  alt="Testimonial Author"
+                  width={60}
+                  height={60}
+                  className="author-image"
+                />
+                <div className="author-info">
+                  <p className="author-name">Jeremiah Smith</p>
+                  <p className="author-title">CEO, Company Name</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
-                className="wistia_embed wistia_async_1ku3mu07k8 autoPlay=false"
+                className="wistia_embed wistia_async_1ku3mu07k8"
                 style={{ height: "100%", width: "100%" }}
               ></div>
               <div className="reel-overlay">
@@ -98,7 +141,7 @@ const VideoReels = () => {
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
-                className="wistia_embed wistia_async_dorz4lqu14 autoPlay=false"
+                className="wistia_embed wistia_async_dorz4lqu14"
                 style={{ height: "100%", width: "100%" }}
               ></div>
               <div className="reel-overlay">
@@ -113,7 +156,7 @@ const VideoReels = () => {
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
-                className="wistia_embed wistia_async_b606gkduct autoPlay=false"
+                className="wistia_embed wistia_async_b606gkduct"
                 style={{ height: "100%", width: "100%" }}
               ></div>
               <div className="reel-overlay">
@@ -123,12 +166,32 @@ const VideoReels = () => {
                 </div>
               </div>
             </div>
+
+            <div className="reel-testimonial">
+              <p>
+                That was an amazing experience. I had a great time and learned a
+                lot. I'm so grateful for the opportunity to work with Jeremiah.
+              </p>
+              <div className="reel-testimonial-author">
+                <Image
+                  src="/images/testimonials/3.jpg"
+                  alt="Testimonial Author"
+                  width={60}
+                  height={60}
+                  className="author-image"
+                />
+                <div className="author-info">
+                  <p className="author-name">Jeremiah Smith</p>
+                  <p className="author-title">CEO, Company Name</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="reel-card">
             <div className="reel-wrapper" style={{ aspectRatio: "9/16" }}>
               <div
-                className="wistia_embed wistia_async_vb44bp1fb5 autoPlay=false"
+                className="wistia_embed wistia_async_vb44bp1fb5"
                 style={{ height: "100%", width: "100%" }}
               ></div>
               <div className="reel-overlay">
