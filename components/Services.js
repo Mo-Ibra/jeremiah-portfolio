@@ -15,7 +15,7 @@ const Services = () => {
             <h3>User Generated Content</h3>
             <p>
               Product seeding campaigns to collect authentic content & find
-              brand ambassadors that never stop CR8TING. ‹
+              brand ambassadors that never stop CR8TING.
             </p>
             <Image
               src="/images/services-2/1.png"
