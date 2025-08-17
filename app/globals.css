@@ -74,7 +74,7 @@ body {
     sans-serif;
   background: var(--primary-white);
   color: var(--primary-black);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
@@ -2226,40 +2226,6 @@ nav.dark-section .mobile-menu-toggle span {
 .services {
   padding: clamp(4rem, 8vw, 6rem) 0;
   overflow: hidden;
-}
-
-/* Add Grid Background for Video Reels */
-.services::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-  background-size: 50px 50px;
-  animation: gridMove 20s linear infinite;
-  z-index: -1; /* Place behind the content */
-  pointer-events: none;
-}
-
-/* Keep the existing gradient at the bottom */
-.services::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 150px;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(255, 255, 255, 0.6) 50%,
-    rgba(255, 255, 255, 0.95) 100%
-  );
-  pointer-events: none;
-  z-index: 10;
 }
 
 .services h2 {

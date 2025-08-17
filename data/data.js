@@ -91,17 +91,6 @@ export const videoReels = [
     videoId: "dorz4lqu14",
     views: "4.1M",
     platform: "Instagram",
-    hasTestimonial: false,
-    testimonialText: null,
-    testimonialImageSrc: null,
-    authorName: null,
-    authorRole: null,
-  },
-  {
-    aspectRatio: "9/16",
-    videoId: "b606gkduct",
-    views: "4.1M",
-    platform: "Instagram",
     hasTestimonial: true,
     testimonialText:
       "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
@@ -111,7 +100,19 @@ export const videoReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "vb44bp1fb5",
+    videoId: "glq2nisk1j",
+    views: "4.1M",
+    platform: "Instagram",
+    hasTestimonial: true,
+    testimonialText:
+      "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
+    testimonialImageSrc: "4.jpg",
+    authorName: "Jeremiah Smith",
+    authorRole: "CEO, Company Name",
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "0l19efg1jt",
     views: "4.1M",
     platform: "Instagram",
     hasTestimonial: false,
@@ -142,7 +143,7 @@ export const videoReels = [
 export const portfolioReels = [
   {
     aspectRatio: "9/16",
-    videoId: "shz4x8pyt5",
+    videoId: "s3pthor4vn",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -154,7 +155,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "fx0tr3a1h9",
+    videoId: "dkzw4n1wr0",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -166,7 +167,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "dzwspp5lfe",
+    videoId: "asoftd14pu",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: false,
@@ -177,7 +178,40 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "os87c8vrvb",
+    videoId: "1iu0jtd817",
+    views: "2.3M",
+    platform: "TikTok",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "axpdql1sfx",
+    views: "2.3M",
+    platform: "TikTok",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "idyc2rfkjp",
+    views: "2.3M",
+    platform: "TikTok",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "2exlvz5s5n",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -188,8 +222,8 @@ export const portfolioReels = [
     authorRole: "CEO, Company Name",
   },
   {
-    aspectRatio: "1/1",
-    videoId: "hx2b7f8z7l",
+    aspectRatio: "9/16",
+    videoId: "sbbrj9d2ag",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -201,18 +235,19 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "s3pthor4vn",
+    videoId: "f4pg22t46p",
     views: "2.3M",
     platform: "TikTok",
-    hasTestimonial: false,
-    testimonialText: null,
-    testimonialImageSrc: null,
-    authorName: null,
-    authorRole: null,
+    hasTestimonial: true,
+    testimonialText:
+      "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
+    testimonialImageSrc: "5.jpg",
+    authorName: "Jeremiah Smith",
+    authorRole: "CEO, Company Name",
   },
   {
     aspectRatio: "9/16",
-    videoId: "asoftd14pu",
+    videoId: "urul1qdxg0",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -224,13 +259,69 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "idyc2rfkjp",
+    videoId: "vb44bp1fb5",
+    views: "2.3M",
+    platform: "TikTok",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "5j96facrfq",
+    views: "2.3M",
+    platform: "TikTok",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "b606gkduct",
+    views: "2.3M",
+    platform: "TikTok",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "shz4x8pyt5",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
     testimonialText:
       "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
     testimonialImageSrc: "7.jpg",
+    authorName: "Jeremiah Smith",
+    authorRole: "CEO, Company Name",
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "fx0tr3a1h9",
+    views: "2.3M",
+    platform: "TikTok",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "dzwspp5lfe",
+    views: "2.3M",
+    platform: "TikTok",
+    hasTestimonial: true,
+    testimonialText:
+      "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
+    testimonialImageSrc: "8.jpg",
     authorName: "Jeremiah Smith",
     authorRole: "CEO, Company Name",
   },
@@ -267,7 +358,7 @@ export const servicesData = [
  * ===============================
  *   About Section Static Content
  * ===============================
- * 
+ *
  * This file contains text and image data
  * for the "About" section of the website.
  *
@@ -296,14 +387,14 @@ export const aboutData = {
  * ===============================
  *   FAQ Section Static Content
  * ===============================
- * 
+ *
  * This file contains the list of Questions & Answers
  * for the "FAQ" section of the website.
  *
  * 👉 Non-technical user guide:
  * - To change a QUESTION → edit the "question" text
  * - To change an ANSWER → edit the "answer" text
- * - To ADD a new FAQ → copy one of the objects below 
+ * - To ADD a new FAQ → copy one of the objects below
  *   (everything inside { ... }) and paste it above the last one,
  *   then change the question and answer.
  *
@@ -317,26 +408,26 @@ export const faqData = [
   {
     question: "Do you cover any additional advertising services?",
     answer:
-      "Absolutely. You may want to consider additional add-ons such as scriptwriting and briefing. As our collaboration evolves, I may expand services to support more of your digital growth."
+      "Absolutely. You may want to consider additional add-ons such as scriptwriting and briefing. As our collaboration evolves, I may expand services to support more of your digital growth.",
   },
   {
     question: "What makes you different?",
     answer:
-      "I'm proud of my core principles that set me apart in the creative marketing landscape. My approach is rooted in structured storytelling, performance-driven thinking, and authentic partnerships."
+      "I'm proud of my core principles that set me apart in the creative marketing landscape. My approach is rooted in structured storytelling, performance-driven thinking, and authentic partnerships.",
   },
   {
     question: "How do we know your ads will work for our brand?",
     answer:
-      "My process is deeply collaborative. I research your brand and audience, then build high-converting ad content backed by performance insights and consistent iteration."
+      "My process is deeply collaborative. I research your brand and audience, then build high-converting ad content backed by performance insights and consistent iteration.",
   },
   {
     question: "What does your pricing look like?",
     answer:
-      "Pricing is tailored based on your goals and scope. I don't do generic packages—every quote is custom, clear, and value-focused with zero hidden fees."
+      "Pricing is tailored based on your goals and scope. I don't do generic packages—every quote is custom, clear, and value-focused with zero hidden fees.",
   },
   {
     question: "Why not hire a full-time editor or agency?",
     answer:
-      "Great question. Hiring full-time costs $60k+ annually with overhead—and often, underutilization. Agencies? Add markup, bureaucracy, and delays. I deliver fast, strategic creative when and how you need it."
-  }
+      "Great question. Hiring full-time costs $60k+ annually with overhead—and often, underutilization. Agencies? Add markup, bureaucracy, and delays. I deliver fast, strategic creative when and how you need it.",
+  },
 ];
