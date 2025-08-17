@@ -235,3 +235,34 @@ export const portfolioReels = [
     authorRole: "CEO, Company Name",
   },
 ];
+
+// data/servicesData.js
+
+/**
+ * 🔹 How to edit:
+ * Each service is stored as an object { title, description, image }.
+ * To add a new service, copy one of the objects below and change its values.
+ */
+
+const servicesData = [
+  {
+    title: "User Generated Content",
+    description:
+      "Product seeding campaigns to collect authentic content & find brand ambassadors that never stop CR8TING.",
+    image: "/images/services-2/1.png",
+  },
+  {
+    title: "Studio Content",
+    description:
+      "High production content that will WOW your customers and ELEV8TE your brand, all in one place.",
+    image: "/images/services-2/2.jpg",
+  },
+  {
+    title: "AI Generated Content",
+    description:
+      "Harnessing the power of AI, we generate hyper-realistic content that turns ordinary content into mind-blowing CR8TIVE.",
+    image: "/images/services-2/3.jpg",
+  },
+];
+
+export default servicesData;

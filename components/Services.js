@@ -1,8 +1,19 @@
-import Image from "next/image";
+"use client";
+import { motion } from "framer-motion";
+import servicesData from "@/data/data";
+import ServiceCard from "./Cards/ServiceCard";
 
 const Services = () => {
   return (
-    <div className="services">
+    <motion.section
+      className="services"
+      id="services"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <div className="particles" id="particles"></div>
       <div className="services-container">
         <div className="services-header">
           <h2 className="services-title">
@@ -10,49 +21,44 @@ const Services = () => {
             <span className="title-word gradient-text">Services</span>
           </h2>
         </div>
-        <div className="services-cards">
-          <div className="service-card">
-            <h3>User Generated Content</h3>
-            <p>
-              Product seeding campaigns to collect authentic content & find
-              brand ambassadors that never stop CR8TING.
-            </p>
-            <Image
-              src="/images/services-2/1.png"
-              alt="Service Image"
-              width={600}
-              height={400}
-            />
-          </div>
-          <div className="service-card">
-            <h3>Studio Content</h3>
-            <p>
-              High production content that will WOW your customers and ELEV8TE
-              your brand.
-            </p>
-            <Image
-              src="/images/services-2/2.jpg"
-              alt="Service Image"
-              width={600}
-              height={400}
-            />
-          </div>
-          <div className="service-card">
-            <h3>AI Generated Content</h3>
-            <p>
-              Harnessing the power of AI, we generate hyper-realistic content
-              that turns ordinary content into mind-blowing CR8TIVE.
-            </p>
-            <Image
-              src="/images/services-2/3.jpg"
-              alt="Service Image"
-              width={600}
-              height={400}
-            />
-          </div>
-        </div>
+
+        <motion.div
+          className="services-cards"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={{
+            hidden: {},
+            show: {
+              transition: {
+                staggerChildren: 0.25,
+              },
+            },
+          }}
+        >
+          {servicesData.map((service, index) => (
+            <motion.div
+              key={index}
+              variants={{
+                hidden: { opacity: 0, y: 40, scale: 0.95 },
+                show: {
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                  transition: { duration: 0.6, ease: "easeOut" },
+                },
+              }}
+            >
+              <ServiceCard
+                title={service.title}
+                description={service.description}
+                image={service.image}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 
