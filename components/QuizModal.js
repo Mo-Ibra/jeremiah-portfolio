@@ -74,6 +74,10 @@ const QuizModal = ({ isOpen, onClose }) => {
 
       if (res.ok) {
         setShowSuccess(true);
+
+        // Redirect to calendly
+        window.open("https://calendly.com/jeremiah-harcharran-qrd_/30min", "_blank");
+
       } else {
         console.error("Failed to send email");
       }
