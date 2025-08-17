@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import servicesData from "@/data/data";
+import { servicesData } from "@/data/data";
 import ServiceCard from "./Cards/ServiceCard";
 
 const Services = () => {
@@ -13,7 +13,6 @@ const Services = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
     >
-      <div className="particles" id="particles"></div>
       <div className="services-container">
         <div className="services-header">
           <h2 className="services-title">

@@ -2011,10 +2011,10 @@ nav.dark-section .mobile-menu-toggle span {
 } */
 
 /* Container for the About Me and My Services sections */
-.about-container {
+/* .about-container {
   padding: 40px;
   background-color: #f4f4f4;
-}
+} */
 
 /* About Me Section */
 /* .about {
@@ -2093,14 +2093,14 @@ nav.dark-section .mobile-menu-toggle span {
   transform: scale(1.1);
 } */
 
-.about-section {
-  padding: 4rem 2px;
+.about {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  overflow: hidden;
 }
 
 .about-container {
   margin: 0 auto;
   text-align: center;
-  background-color: white;
 }
 
 .about-greeting {
@@ -2222,21 +2222,6 @@ nav.dark-section .mobile-menu-toggle span {
   }
 }
 
-/* Hover effect for Service cards */
-.service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  cursor: pointer;
-  border: 2px solid transparent;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 255, 136, 0.5);
-  border-color: #00ff88;
-  background-color: #f9fff9; /* very light green tint */
-  color: black; /* Ensure text remains readable */
-}
-
 /* My Services Section */
 .services {
   padding: clamp(4rem, 8vw, 6rem) 0;
@@ -2309,9 +2294,18 @@ nav.dark-section .mobile-menu-toggle span {
   transition: box-shadow 0.3s ease;
 }
 
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
 .service-card:hover {
-  box-shadow: 0 12px 30px rgba(0, 255, 136, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 255, 136, 0.5);
   border-color: #00ff88;
+  background-color: #f9fff9; /* very light green tint */
+  color: black; /* Ensure text remains readable */
 }
 
 .service-card-content {
@@ -2349,6 +2343,7 @@ nav.dark-section .mobile-menu-toggle span {
   .service-card {
     width: 45%;
     height: auto;
+    margin: auto;
   }
 
   .services {

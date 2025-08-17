@@ -236,15 +236,13 @@ export const portfolioReels = [
   },
 ];
 
-// data/servicesData.js
-
 /**
  * 🔹 How to edit:
  * Each service is stored as an object { title, description, image }.
  * To add a new service, copy one of the objects below and change its values.
  */
 
-const servicesData = [
+export const servicesData = [
   {
     title: "User Generated Content",
     description:
@@ -265,4 +263,80 @@ const servicesData = [
   },
 ];
 
-export default servicesData;
+/**
+ * ===============================
+ *   About Section Static Content
+ * ===============================
+ * 
+ * This file contains text and image data
+ * for the "About" section of the website.
+ *
+ * 👉 Non-technical user guide:
+ * - To change the NAME → update the "name" value
+ * - To change the ROLE → update the "role" value
+ * - To change the DESCRIPTION → edit the text in "description"
+ * - To change the PHOTO → replace the file in /public/images
+ *   and update the "image" path
+ *
+ * ⚠️ Important:
+ * - Keep the text inside quotes (" ")
+ * - Do not remove the commas at the end of each line
+ * - The image path should start with "/images/"
+ */
+
+export const aboutData = {
+  name: "Jeremiah.",
+  role: "Creative Performance Architect",
+  description:
+    "I help brands grow by leveraging data-driven insights and creative strategies. From corporate strategist to leading innovative campaigns, I thrive in transforming brands.",
+  image: "/images/me.png",
+};
+
+/**
+ * ===============================
+ *   FAQ Section Static Content
+ * ===============================
+ * 
+ * This file contains the list of Questions & Answers
+ * for the "FAQ" section of the website.
+ *
+ * 👉 Non-technical user guide:
+ * - To change a QUESTION → edit the "question" text
+ * - To change an ANSWER → edit the "answer" text
+ * - To ADD a new FAQ → copy one of the objects below 
+ *   (everything inside { ... }) and paste it above the last one,
+ *   then change the question and answer.
+ *
+ * ⚠️ Important:
+ * - Keep the text inside quotes (" ")
+ * - Do not remove the commas between each item
+ * - Make sure each FAQ has BOTH a "question" and an "answer"
+ */
+
+export const faqData = [
+  {
+    question: "Do you cover any additional advertising services?",
+    answer:
+      "Absolutely. You may want to consider additional add-ons such as scriptwriting and briefing. As our collaboration evolves, I may expand services to support more of your digital growth."
+  },
+  {
+    question: "What makes you different?",
+    answer:
+      "I'm proud of my core principles that set me apart in the creative marketing landscape. My approach is rooted in structured storytelling, performance-driven thinking, and authentic partnerships."
+  },
+  {
+    question: "How do we know your ads will work for our brand?",
+    answer:
+      "My process is deeply collaborative. I research your brand and audience, then build high-converting ad content backed by performance insights and consistent iteration."
+  },
+  {
+    question: "What does your pricing look like?",
+    answer:
+      "Pricing is tailored based on your goals and scope. I don't do generic packages—every quote is custom, clear, and value-focused with zero hidden fees."
+  },
+  {
+    question: "Why not hire a full-time editor or agency?",
+    answer:
+      "Great question. Hiring full-time costs $60k+ annually with overhead—and often, underutilization. Agencies? Add markup, bureaucracy, and delays. I deliver fast, strategic creative when and how you need it."
+  }
+];
