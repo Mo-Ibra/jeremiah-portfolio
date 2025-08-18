@@ -328,9 +328,23 @@ export const portfolioReels = [
 ];
 
 /**
+ * 🔹 Services Data
+ * This file stores all the services displayed on the website.
+ *
  * 🔹 How to edit:
- * Each service is stored as an object { title, description, image }.
- * To add a new service, copy one of the objects below and change its values.
+ * Each service is stored as an object with:
+ *   - title: string (service name, shown as heading)
+ *   - description: string (short text shown under the title)
+ *   - imagesCarousel: array of images for the service slideshow
+ *
+ * 🔹 To add a new service:
+ * 1. Copy one of the existing service objects { ... }
+ * 2. Change the "title", "description", and update the "imagesCarousel"
+ * 3. Each image inside imagesCarousel must have:
+ *      - id: unique number (1, 2, 3...)
+ *      - image: path to the image (must be inside /public/images/)
+ *      - alt: description of the image (important for accessibility & SEO)
+ * 4. Save the file — the website will update automatically.
  */
 
 export const servicesData = [
@@ -338,19 +352,67 @@ export const servicesData = [
     title: "User Generated Content",
     description:
       "Product seeding campaigns to collect authentic content & find brand ambassadors that never stop CR8TING.",
-    image: "/images/services-2/1.png",
+    imagesCarousel: [
+      {
+        id: 1,
+        image: "/images/services-2/1.png",
+        alt: "Family with children outdoors",
+      },
+      {
+        id: 2,
+        image: "/images/services-2/4.png",
+        alt: "Family with children outdoors",
+      },
+      {
+        id: 3,
+        image: "/images/services-2/5.jpg",
+        alt: "Family with children outdoors",
+      },
+    ],
   },
   {
     title: "Studio Content",
     description:
-      "High production content that will WOW your customers and ELEV8TE your brand, all in one place.",
-    image: "/images/services-2/2.jpg",
+      "High production content that will WOW your customers and ELEV8TE your brand. All in one place.",
+    imagesCarousel: [
+      {
+        id: 1,
+        image: "/images/services-2/2.jpg",
+        alt: "Three women in studio setting",
+      },
+      {
+        id: 2,
+        image: "/images/services-2/6.png",
+        alt: "Three women in studio setting",
+      },
+      {
+        id: 3,
+        image: "/images/services-2/7.jpg",
+        alt: "Three women in studio setting",
+      },
+    ],
   },
   {
     title: "AI Generated Content",
     description:
       "Harnessing the power of AI, we generate hyper-realistic content that turns ordinary content into mind-blowing CR8TIVE.",
-    image: "/images/services-2/3.jpg",
+    imagesCarousel: [
+      {
+        id: 1,
+        image: "/images/services-2/3.jpg",
+        alt: "AI generated product advertisement",
+      },
+      {
+        id: 2,
+        image: "/images/services-2/6.png",
+        alt: "AI generated product advertisement",
+      },
+      {
+        id: 3,
+        image: "/images/services-2/7.jpg",
+        alt: "AI generated product advertisement",
+      },
+    ],
   },
 ];
 

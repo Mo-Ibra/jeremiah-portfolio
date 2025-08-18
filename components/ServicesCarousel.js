@@ -8,74 +8,7 @@ import { useState } from "react";
 
 import ServicesCarouselCard from "./Cards/ServicesCarouselCard";
 
-const servicesData = [
-  {
-    title: "User Generated Content",
-    description:
-      "Product seeding campaigns to collect authentic content & find brand ambassadors that never stop CR8TING.",
-    imagesCarousel: [
-      {
-        id: 1,
-        image: "/images/services-2/1.png",
-        alt: "Family with children outdoors",
-      },
-      {
-        id: 2,
-        image: "/placeholder.svg?height=300&width=400",
-        image: "/images/services-2/4.png",
-      },
-      {
-        id: 3,
-        image: "/placeholder.svg?height=300&width=400",
-        image: "/images/services-2/5.jpg",
-      },
-    ],
-  },
-  {
-    title: "Studio Content",
-    description:
-      "High production content that will WOW your customers and ELEV8TE your brand. All in one place.",
-    imagesCarousel: [
-      {
-        id: 1,
-        image: "/images/services-2/2.jpg",
-        alt: "Three women in studio setting",
-      },
-      {
-        id: 2,
-        image: "/placeholder.svg?height=300&width=400",
-        image: "/images/services-2/6.png",
-      },
-      {
-        id: 3,
-        image: "/placeholder.svg?height=300&width=400",
-        image: "/images/services-2/7.jpg",
-      },
-    ],
-  },
-  {
-    title: "AI Generated Content",
-    description:
-      "Harnessing the power of AI, we generate hyper-realistic content that turns ordinary content into mind-blowing CR8TIVE.",
-    imagesCarousel: [
-      {
-        id: 1,
-        image: "/images/services-2/3.jpg",
-        alt: "AI generated product advertisement",
-      },
-      {
-        id: 2,
-        image: "/placeholder.svg?height=300&width=400",
-        image: "/images/services-2/6.png",
-      },
-      {
-        id: 3,
-        image: "/placeholder.svg?height=300&width=400",
-        image: "/images/services-2/7.jpg",
-      },
-    ],
-  },
-];
+import { servicesData } from "@/data/data";
 
 export default function ServicesCarousel() {
   const [currentSlides, setCurrentSlides] = useState({
