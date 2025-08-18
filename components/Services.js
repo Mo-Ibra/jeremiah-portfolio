@@ -14,12 +14,10 @@ const Services = () => {
       viewport={{ once: true, amount: 0.3 }}
     >
       <div className="services-container">
-        <div className="services-header">
-          <h2 className="services-title">
-            <span className="title-word">My</span>
-            <span className="title-word gradient-text">Services</span>
-          </h2>
-        </div>
+        <h2 className="services-title">
+          <span className="title-word">My</span>
+          <span className="title-word gradient-text">Services</span>
+        </h2>
 
         <motion.div
           className="services-cards"

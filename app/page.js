@@ -5,7 +5,8 @@ import Hero from "@/components/Hero";
 import NoiseOverlay from "@/components/NoiseOverlay";
 import Preload from "@/components/Preload";
 import VideoReels from "@/components/VideoReels";
-import Services from "@/components/Services";
+// import Services from "@/components/Services";
+import ServicesCarousel from "@/components/ServicesCarousel";
 import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
 import Principles from "@/components/Principles";
@@ -49,7 +50,8 @@ export default function Home() {
       <Navigation />
       <Hero />
       <VideoReels />
-      <Services />
+      {/* <Services /> */}
+      <ServicesCarousel />
       <Portfolio />
       <About />
       <Principles />
