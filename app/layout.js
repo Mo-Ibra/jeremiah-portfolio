@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Jeremiah Harcharran - Performance Creative Architect",
   description: "Jeremiah Harcharran - Performance Creative Architect",
+  icons: {
+    icon: "./images/logo.png",
+  }
 };
 
 export default function RootLayout({ children }) {

@@ -14,7 +14,6 @@ const ServiceCard = ({ title, description, image }) => {
           alt={title}
           width={600}
           height={400}
-          className="service-card-img"
         />
         <h3>{title}</h3>
         <p>{description}</p>

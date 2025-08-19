@@ -355,17 +355,17 @@ export const servicesData = [
     imagesCarousel: [
       {
         id: 1,
-        image: "/images/services-2/1.png",
+        image: "/images/services/User-Generated-Content/1.png",
         alt: "Family with children outdoors",
       },
       {
         id: 2,
-        image: "/images/services-2/4.png",
+        image: "/images/services/User-Generated-Content/2.png",
         alt: "Family with children outdoors",
       },
       {
         id: 3,
-        image: "/images/services-2/5.jpg",
+        image: "/images/services/User-Generated-Content/3.png",
         alt: "Family with children outdoors",
       },
     ],
@@ -377,17 +377,17 @@ export const servicesData = [
     imagesCarousel: [
       {
         id: 1,
-        image: "/images/services-2/2.jpg",
+        image: "/images/services/Studio-Content/1.jpg",
         alt: "Three women in studio setting",
       },
       {
         id: 2,
-        image: "/images/services-2/6.png",
+        image: "/images/services/Studio-Content/2.jpg",
         alt: "Three women in studio setting",
       },
       {
         id: 3,
-        image: "/images/services-2/7.jpg",
+        image: "/images/services/Studio-Content/3.png",
         alt: "Three women in studio setting",
       },
     ],
@@ -399,17 +399,17 @@ export const servicesData = [
     imagesCarousel: [
       {
         id: 1,
-        image: "/images/services-2/3.jpg",
+        image: "/images/services/AI-Generated-Content/1.jpg",
         alt: "AI generated product advertisement",
       },
       {
         id: 2,
-        image: "/images/services-2/6.png",
+        image: "/images/services/AI-Generated-Content/2.png",
         alt: "AI generated product advertisement",
       },
       {
         id: 3,
-        image: "/images/services-2/7.jpg",
+        image: "/images/services/AI-Generated-Content/3.jpg",
         alt: "AI generated product advertisement",
       },
     ],

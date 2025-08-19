@@ -11,7 +11,7 @@ export default function Principles() {
         {/* Header */}
         <div className="principles-header text-center mb-16">
           <h2 className="split-text text-4xl font-bold">
-            <span>Core </span>
+            <span style={{ marginRight: "10px" }}>Core</span>
             <span>Principles</span>
           </h2>
           <p className="header-subtitle text-lg mt-4">
