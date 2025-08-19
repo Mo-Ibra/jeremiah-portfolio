@@ -1574,7 +1574,7 @@ nav.dark-section .mobile-menu-toggle span {
   position: relative;
   overflow: hidden;
   z-index: 0; /* Ensure it's not overlapping the grid */
-  margin-top: -12rem; /* Move the section up */
+  margin-top: -16rem; /* Move the section up */
 }
 
 /* Particles for Video Reels */
@@ -1601,6 +1601,9 @@ nav.dark-section .mobile-menu-toggle span {
 }
 
 @media (max-width: 768px) {
+  .video-reels {
+    margin-top: -12rem;
+  }
   .video-reels .particle {
     width: 3px;
     height: 3px;
