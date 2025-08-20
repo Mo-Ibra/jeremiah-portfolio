@@ -2131,7 +2131,6 @@ nav.dark-section .mobile-menu-toggle span {
 @media (max-width: 1024px) {
   .about-image,
   .about-content {
-    width: 100%;
     padding: 20px;
   }
 
@@ -3353,7 +3352,7 @@ nav.dark-section .mobile-menu-toggle span {
 
 /* Optimized Principles Section */
 .principles {
-  padding: clamp(4rem, 8vw, 8rem) clamp(1rem, 4vw, 4rem);
+  padding: clamp(2rem, 4vw, 4rem) clamp(0rem, 2vw, 2rem);
   background: #fafafa;
   position: relative;
   overflow: hidden;
@@ -3401,7 +3400,7 @@ nav.dark-section .mobile-menu-toggle span {
 }
 
 .attitude-section {
-  margin-bottom: clamp(2rem, 4vw, 4rem);
+  margin-bottom: clamp(1rem, 2vw, 2rem);
 }
 
 .section-label {
@@ -4035,6 +4034,26 @@ nav.dark-section .mobile-menu-toggle span {
 
 .cta-button:active {
   transform: translateY(-1px) scale(1.02);
+}
+
+.spot-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.spot-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--accent-green);
+  border-radius: 50%;
+  display: inline-block;
+  color: var(--accent-green);
 }
 
 /* Optimized Quiz Modal */
