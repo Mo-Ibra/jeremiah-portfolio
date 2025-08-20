@@ -23,6 +23,10 @@
   margin-bottom: 2rem;
 }
 
+.principles-header h2 span:last-child {
+  color: var(--accent-green);
+}
+
 .header-subtitle {
   font-size: clamp(1.125rem, 2vw, 1.25rem);
   color: var(--gray-text);
