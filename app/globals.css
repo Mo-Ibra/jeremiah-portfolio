@@ -2181,7 +2181,8 @@ nav.dark-section .mobile-menu-toggle span {
 
 /* My Services Section */
 .services {
-  padding: clamp(4rem, 8vw, 8rem) clamp(1rem, 3vw, 2rem);
+  /* padding: clamp(4rem, 8vw, 8rem) clamp(1rem, 3vw, 2rem); */
+  padding: clamp(1, 2vw, 2rem) clamp(0rem, 1vw, 0rem);
   position: relative;
   overflow: hidden;
 }
