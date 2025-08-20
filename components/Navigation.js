@@ -121,7 +121,7 @@ const Navigation = () => {
       <nav id="navbar">
         <div className="nav-container">
           <div className="logo-area" onClick={scrollToSection("hero")}>
-            <Image src={"/images/logo.png"} alt="Logo" width={50} height={50} />
+            <Image src={"/images/logo.png"} alt="Logo" width={50} height={50} className="brand-logo" />
             <div className="brand-text">
               <h1>Jeremiah Harcharran.</h1>
               <p>Performance Creative Partner</p>
