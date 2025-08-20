@@ -9,7 +9,7 @@ const Contact = ({ onOpenQuiz }) => {
       <div className="cta-content">
         <h2>Ready to Scale Your Brand?</h2>
         <p>Stop burning cash on creatives that don&apos;t convert.</p>
-        <button className="cta-button" onClick={onOpenQuiz}>Let&apos;s Talk</button>
+        <button className="cta-button" onClick={onOpenQuiz}>BOOK MEETING</button>
       </div>
     </section>
   );

@@ -145,7 +145,7 @@ const Navigation = () => {
             </li>
             <li>
               <a href="#contact" className="nav-cta">
-                Let&apos;s Talk
+                BOOK MEETING
               </a>
             </li>
           </ul>
