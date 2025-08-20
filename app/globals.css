@@ -1996,6 +1996,8 @@ nav.dark-section .mobile-menu-toggle span {
   position: relative;
   display: grid;
   background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .about-grid {

@@ -13,7 +13,7 @@ const About = () => {
       <div className="about-container">
         {/* Greeting */}
         <div className="about-left">
-          <h2 className="about-greeting">Hey! Im</h2>
+          <h2 className="about-greeting">Hey! I&apos;m</h2>
         </div>
 
         {/* Profile Image */}
