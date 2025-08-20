@@ -1,0 +1,370 @@
+.principles {
+  padding: clamp(2rem, 4vw, 4rem) clamp(0rem, 2vw, 2rem);
+  background: #fafafa;
+  position: relative;
+  overflow: hidden;
+}
+
+.principles-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.principles-header {
+  text-align: center;
+  margin-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+.principles-header h2 {
+  font-size: clamp(3rem, 6vw + 1rem, 7rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  margin-bottom: 2rem;
+}
+
+.header-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  color: var(--gray-text);
+  line-height: 1.8;
+}
+
+.header-subtitle .highlight {
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+.principle-section {
+  margin-bottom: clamp(4rem, 8vw, 6rem);
+}
+
+.workflow-section {
+  margin-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+.stack-section {
+  margin-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+.attitude-section {
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  position: relative;
+}
+
+.label-dot {
+  width: 12px;
+  height: 12px;
+  background: var(--accent-green);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--glow-green);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.label-text {
+  font-size: clamp(0.8rem, 1.5vw, 0.875rem);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray-text);
+}
+
+.label-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+}
+
+/* Attitude Grid - Mobile Optimized */
+.attitude-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+@media (max-width: 640px) {
+  .attitude-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.attitude-card {
+  background: white;
+  border-radius: 24px;
+  padding: clamp(2rem, 4vw, 3rem);
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transform-style: preserve-3d;
+  opacity: 0;
+  transform: translateY(40px) rotateX(-10deg);
+  overflow: hidden;
+}
+
+.attitude-card.visible {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+.attitude-card:nth-child(1).visible {
+  transition-delay: 0s;
+}
+.attitude-card:nth-child(2).visible {
+  transition-delay: 0.1s;
+}
+.attitude-card:nth-child(3).visible {
+  transition-delay: 0.2s;
+}
+
+.attitude-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, var(--accent-green) 0%, transparent 70%);
+  opacity: 0;
+  transition: all 0.6s ease;
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .attitude-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-green);
+  }
+
+  .attitude-card:hover::before {
+    opacity: 0.1;
+    top: -50%;
+    left: -50%;
+  }
+}
+
+.card-number {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: clamp(3rem, 6vw, 4rem);
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+  .attitude-card:hover .card-number {
+    color: rgba(0, 255, 136, 0.2);
+    transform: scale(1.1);
+  }
+}
+
+.attitude-card h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+  letter-spacing: -0.01em;
+}
+
+.attitude-card p {
+  font-size: clamp(0.95rem, 1.5vw, 1rem);
+  line-height: 1.7;
+  color: var(--gray-text);
+}
+
+/* Workflow Grid - Mobile Optimized */
+.workflow-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+@media (max-width: 640px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.workflow-card {
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  border-radius: clamp(20px, 4vw, 32px);
+  padding: clamp(2rem, 4vw, 3rem);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(60px) scale(0.9);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.workflow-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.workflow-card:nth-child(1).visible {
+  transition-delay: 0s;
+}
+.workflow-card:nth-child(2).visible {
+  transition-delay: 0.15s;
+}
+.workflow-card:nth-child(3).visible {
+  transition-delay: 0.3s;
+}
+
+.workflow-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-green);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s ease;
+}
+
+.workflow-card.visible::after {
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+@media (hover: hover) {
+  .workflow-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent-green);
+  }
+}
+
+.workflow-card h4 {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  letter-spacing: -0.01em;
+}
+
+.workflow-card p {
+  font-size: clamp(0.95rem, 1.5vw, 1rem);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.workflow-card .card-number {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: clamp(3rem, 6vw, 4rem);
+  font-weight: 900;
+  color: rgba(0, 255, 136, 0.2);
+  transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+  .workflow-card:hover .card-number {
+    color: rgba(0, 255, 136, 0.2);
+    transform: scale(1.03);
+  }
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+@media (max-width: 640px) {
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stack-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(60px) scale(0.9);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.stack-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* staggered animation */
+.stack-card:nth-child(1).visible { transition-delay: 0s; }
+.stack-card:nth-child(2).visible { transition-delay: 0.15s; }
+.stack-card:nth-child(3).visible { transition-delay: 0.3s; }
+.stack-card:nth-child(4).visible { transition-delay: 0.45s; }
+
+/* underline effect */
+.stack-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--accent-green);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s ease;
+}
+.stack-card.visible::after {
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+/* hover */
+@media (hover: hover) {
+  .stack-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 4px 16px #ddd;
+    border-color: var(--accent-green);
+  }
+}
+
+/* Stack Card Container */
+.stack-card-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icon */
+.stack-icon {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* typography */
+.stack-card h4 {
+  font-size: clamp(1rem, 1.5vw, 1.0rem);
+  font-weight: 700;
+  color: var(--primary-black);
+}
+.stack-card p {
+  font-size: clamp(0.95rem, 1.5vw, 1rem);
+  line-height: 1.7;
+  color: var(--gray-text);
+}
