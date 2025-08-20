@@ -124,7 +124,7 @@ const Navigation = () => {
             <Image src={"/images/logo.png"} alt="Logo" width={50} height={50} />
             <div className="brand-text">
               <h1>Jeremiah Harcharran.</h1>
-              <p>Performance Creative Architect</p>
+              <p>Performance Creative Partner</p>
             </div>
           </div>
           <ul className="nav-links">

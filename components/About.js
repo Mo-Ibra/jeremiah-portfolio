@@ -7,49 +7,33 @@ import { aboutData } from "@/data/data";
 const About = () => {
   return (
     <section id="about" className="about">
+      <div className="about-grid"></div>
       <div className="about-container">
-
         {/* Greeting */}
-        <h2
-          className="about-greeting"
-        >
-          Hey! I&apos;m
-        </h2>
-
-        {/* Profile Image */}
-        <div
-          className="about-image-wrapper"
-        >
-          <Image
-            src={aboutData.image}
-            alt="Jeremiah profile photo"
-            className="about-image"
-            width={300}
-            height={300}
-          />
+        <div className="about-left">
+          <h2 className="about-greeting">Hey! Im</h2>
         </div>
 
-        {/* Name */}
-        <h2
-          className="about-name"
-        >
-          {aboutData.name}
-        </h2>
+        {/* Profile Image */}
+        <div className="about-center">
+          <div className="about-image-wrapper">
+            <Image
+              src={aboutData.image}
+              alt="Jeremiah profile photo"
+              className="about-image"
+              width={300}
+              height={300}
+            />
+          </div>
+        </div>
 
-        {/* Title */}
-        <h3
-          className="about-title"
-        >
-          {aboutData.title}
-        </h3>
-
-        {/* Description */}
-        <p
-          className="about-description"
-        >
-          {aboutData.description}
-        </p>
+        {/* Content */}
+        <div className="about-right">
+          <h2 className="about-name">{aboutData.name}</h2>
+          <h3 className="about-title">{aboutData.title}</h3>
+        </div>
       </div>
+      <p className="about-description">{aboutData.description}</p>
     </section>
   );
 };
