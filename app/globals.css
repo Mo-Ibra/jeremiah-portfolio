@@ -386,6 +386,7 @@ nav.dark-section .mobile-menu-toggle span {
   .nav-links.active {
     display: flex;
     transform: translateY(0);
+    margin-top: 40px;
   }
 
   nav.dark-section .nav-links {
