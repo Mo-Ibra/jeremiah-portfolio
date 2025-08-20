@@ -121,7 +121,13 @@ const Navigation = () => {
       <nav id="navbar">
         <div className="nav-container">
           <div className="logo-area" onClick={scrollToSection("hero")}>
-            <Image src={"/images/logo.png"} alt="Logo" width={50} height={50} className="brand-logo" />
+            <Image
+              src={"/images/logo.png"}
+              alt="Logo"
+              width={50}
+              height={50}
+              className="brand-logo"
+            />
             <div className="brand-text">
               <h1>Jeremiah Harcharran.</h1>
               <p>Performance Creative Partner</p>
@@ -132,13 +138,16 @@ const Navigation = () => {
               <a href="#hero">Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#services">Services</a>
             </li>
             <li>
               <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#principles">Principles</a>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#principles">Process</a>
             </li>
             <li>
               <a href="#faqs">FAQs</a>
