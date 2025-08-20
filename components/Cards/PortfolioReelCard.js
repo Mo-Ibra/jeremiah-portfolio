@@ -18,7 +18,7 @@ const PortfolioReelCard = ({
         style={{ aspectRatio: aspectRatio }}
       >
         <div
-          className={`wistia_embed wistia_async_${videoId}`}
+          className={`wistia_embed wistia_async_${videoId} muted=true`}
           style={{ height: "100%", width: "100%" }}
         ></div>
 
