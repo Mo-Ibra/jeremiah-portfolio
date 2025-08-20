@@ -3365,6 +3365,7 @@ nav.dark-section .mobile-menu-toggle span {
 }
 
 .principles-header {
+  text-align: center;
   margin-bottom: clamp(4rem, 8vw, 8rem);
 }
 
@@ -3391,15 +3392,15 @@ nav.dark-section .mobile-menu-toggle span {
   margin-bottom: clamp(4rem, 8vw, 6rem);
 }
 
-.attitude-section {
-  margin-bottom: clamp(4rem, 8vw, 8rem);
-}
-
 .workflow-section {
   margin-bottom: clamp(4rem, 8vw, 8rem);
 }
 
 .stack-section {
+  margin-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+.attitude-section {
   margin-bottom: clamp(2rem, 4vw, 4rem);
 }
 
@@ -3537,7 +3538,7 @@ nav.dark-section .mobile-menu-toggle span {
 /* Workflow Grid - Mobile Optimized */
 .workflow-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
   gap: clamp(1.5rem, 3vw, 2rem);
 }
 
@@ -3604,6 +3605,7 @@ nav.dark-section .mobile-menu-toggle span {
 .workflow-card h4 {
   font-size: clamp(1.125rem, 2vw, 1.25rem);
   font-weight: 700;
+  margin-top: 3rem;
   margin-bottom: 1rem;
   color: white;
   letter-spacing: -0.01em;
@@ -3613,6 +3615,23 @@ nav.dark-section .mobile-menu-toggle span {
   font-size: clamp(0.95rem, 1.5vw, 1rem);
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.workflow-card .card-number {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: clamp(3rem, 6vw, 4rem);
+  font-weight: 900;
+  color: rgba(0, 255, 136, 0.2);
+  transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+  .workflow-card:hover .card-number {
+    color: rgba(0, 255, 136, 0.2);
+    transform: scale(1.03);
+  }
 }
 
 .stack-grid {

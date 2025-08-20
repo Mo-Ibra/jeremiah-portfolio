@@ -10,8 +10,8 @@ export default function Principles() {
         {/* Header */}
         <div className="principles-header">
           <h2 className="split-text">
-            <span style={{ marginRight: "10px" }}>Core</span>
-            <span>Principles</span>
+            <span style={{ marginRight: "10px" }}>My</span>
+            <span>Process</span>
           </h2>
           <p className="header-subtitle">
             Every creator has their own code —<br />
@@ -21,58 +21,24 @@ export default function Principles() {
           </p>
         </div>
 
-        {/* ATTITUDE Section */}
-        <div className="principle-section attitude-section">
-          <SectionLabel title="ATTITUDE" />
-          <div className="attitude-grid">
-            {[
-              {
-                number: "01",
-                title: "Narrow focus",
-                text: "I believe in doing one thing exceptionally well: creating ads that sell. This narrow approach ensures every ad is optimized to boost ROAS and drive growth.",
-              },
-              {
-                number: "02",
-                title: "Performance is key",
-                text: "Each ad is built for results. I analyze data, optimize and iterate for performance, and make sure your investment leads to real growth.",
-              },
-              {
-                number: "03",
-                title: "Fast delivery",
-                text: "I deliver each ad approximately within 72 hours without sacrificing quality, ensuring you stay ahead of the competition.",
-              },
-            ].map((card, i) => (
-              <motion.div
-                key={i}
-                className="attitude-card"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.2, duration: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <div className="card-number">{card.number}</div>
-                <h3>{card.title}</h3>
-                <p>{card.text}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
         {/* WORKFLOW Section */}
         <div className="principle-section workflow-section">
           <SectionLabel title="WORKFLOW" animated />
           <div className="workflow-grid">
             {[
               {
-                step: "01. Onboarding",
+                number: "1.",
+                step: "Onboarding",
                 text: "Great work starts with listening — so I begin by learning the heart of your brand, your market, your audience, and your goals.",
               },
               {
-                step: "02. Post-production",
+                number: "2.",
+                step: "Post-production",
                 text: "With a deep understanding of your brand and goals, I dive into creating ads that blend psychology, design, and data for maximum impact.",
               },
               {
-                step: "03. Launch & Optimize",
+                number: "3.",
+                step: "Launch & Optimize",
                 text: "I iterate on creatives to make sure your ads deliver results, tracking performance metrics and optimizing for continuous improvement.",
               },
             ].map((card, i) => (
@@ -89,6 +55,7 @@ export default function Principles() {
                   whileInView={{ width: "100%" }}
                   transition={{ duration: 1, delay: 0.3 + i * 0.3 }}
                 />
+                <span className="card-number">{card.number}</span>
                 <h4>{card.step}</h4>
                 <p>{card.text}</p>
               </motion.div>
@@ -153,6 +120,43 @@ export default function Principles() {
                     <p>{tool.desc}</p>
                   </div>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* ATTITUDE Section */}
+        <div className="principle-section attitude-section">
+          <SectionLabel title="ATTITUDE" />
+          <div className="attitude-grid">
+            {[
+              {
+                number: "01",
+                title: "Narrow focus",
+                text: "I believe in doing one thing exceptionally well: creating ads that sell. This narrow approach ensures every ad is optimized to boost ROAS and drive growth.",
+              },
+              {
+                number: "02",
+                title: "Performance is key",
+                text: "Each ad is built for results. I analyze data, optimize and iterate for performance, and make sure your investment leads to real growth.",
+              },
+              {
+                number: "03",
+                title: "Fast delivery",
+                text: "I deliver each ad approximately within 72 hours without sacrificing quality, ensuring you stay ahead of the competition.",
+              },
+            ].map((card, i) => (
+              <motion.div
+                key={i}
+                className="attitude-card"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.2, duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <div className="card-number">{card.number}</div>
+                <h3>{card.title}</h3>
+                <p>{card.text}</p>
               </motion.div>
             ))}
           </div>
