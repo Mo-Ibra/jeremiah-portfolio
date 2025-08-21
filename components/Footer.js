@@ -24,10 +24,19 @@ const Footer = () => {
     return new Date().getFullYear();
   }
 
+  function getDate() {
+    const date = new Date();
+    const day = date.getDate();
+    const month = date.toLocaleString("default", { month: "long" });
+    const year = date.getFullYear();
+    return `${month} ${day}, ${year}`;
+  }
+
   return (
     <footer>
       <div className="footer-content">
-        <p className="footer-time">London Local Time: {time}</p>
+        <p className="footer-time">{getDate()} - {time}</p>
+        <p>Local time in London, United Kingdom</p>
 
         {/* 🌐 Social Icons */}
         <div className="footer-socials">

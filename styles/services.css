@@ -1,13 +1,13 @@
 /* My Services Section */
 .services {
   /* padding: clamp(4rem, 8vw, 8rem) clamp(1rem, 3vw, 2rem); */
-  padding: clamp(1, 2vw, 2rem) clamp(0rem, 1vw, 0rem);
+  padding: clamp(4rem, 8vw, 8rem) clamp(1rem, 3vw, 2rem);
   position: relative;
   overflow: hidden;
 }
 
 .services-container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 clamp(1rem, 3vw, 2rem);
 }
@@ -33,7 +33,8 @@
   background: linear-gradient(145deg, #ffffff, #f7f9fc);
   border-radius: 20px;
   padding: 25px;
-  width: 420px;
+  width: 100%;
+  max-width: 490px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   height: auto;
   display: flex;

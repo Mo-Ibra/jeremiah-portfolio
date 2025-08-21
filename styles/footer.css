@@ -67,6 +67,10 @@ footer::before {
   transform: translateY(-3px);
 }
 
+.footer-content p:first-child {
+  margin-bottom: 5px;
+}
+
 .footer-content p {
   margin-bottom: 1.5rem;
   font-size: clamp(0.875rem, 1.5vw, 0.95rem);

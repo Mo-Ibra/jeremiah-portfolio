@@ -395,7 +395,7 @@ export const servicesData = [
   {
     title: "AI Generated Content",
     description:
-      "Harnessing the power of AI, we generate hyper-realistic content that turns ordinary content into mind-blowing CR8TIVE.",
+      "Harnessing the power of AI, we generate hyper-realistic content that turns ordinary content into CR8TIVE.",
     imagesCarousel: [
       {
         id: 1,
