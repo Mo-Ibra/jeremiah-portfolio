@@ -41,6 +41,11 @@ export default function Principles() {
                 step: "Launch & Optimize",
                 text: "I iterate on creatives to make sure your ads deliver results, tracking performance metrics and optimizing for continuous improvement.",
               },
+              {
+                number: "4.",
+                step: "Scale",
+                text: "Detailed creative analysis, reporting and optimisation allow us to determine exactly what messaging and angles are driving incremental improvements."
+              }
             ].map((card, i) => (
               <motion.div
                 key={i}
