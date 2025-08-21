@@ -4,7 +4,8 @@ import Image from "next/image";
 
 import { aboutData } from "@/data/data";
 
-import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const About = () => {
   return (
@@ -53,7 +54,7 @@ const About = () => {
           rel="noopener noreferrer"
           aria-label="Twitter"
         >
-          <FaTwitter />
+          <FaXTwitter />
         </a>
         <a
           href="https://instagram.com"

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const [time, setTime] = useState("");
@@ -54,7 +55,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="Twitter"
           >
-            <FaTwitter />
+            <FaXTwitter />
           </a>
           <a
             href="https://instagram.com/your-instagram-profile"

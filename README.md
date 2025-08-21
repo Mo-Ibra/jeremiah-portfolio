@@ -31,3 +31,34 @@ I've been working on the site for the past few hours. Here's what I've done:
 - Improved the site's speed in every way. If it's slow on some devices, this isn't due to programming at all. You'll need to upgrade your hosting, or make some videos not play automatically.
 
 - You mentioned changing the navbar, but I find it really good. However, if you want to change it, like the image you sent, I'll do it.
+
+***
+
+### V2:
+
+Here are the fixes I made to the site:
+
+- Return "Let's talk" to the button on navigation bar.
+
+- Changed the button in the footer to the new style as requested
+
+- Fixed the time issue. (Now looks as expected)
+
+- Fixed the padding in the "Services" section and fixed the mobile responsiveness issue
+
+- The colors are blended throughout the site, so you won't notice any color standing out from the original color.
+
+- I enlarged the images in the "My Services" section to make them clearer. I did this by making the container bigger, and that's the best I could come up with.
+
+- Made the word "Performance Creative Partner" appear on mobile as well
+
+- Added the scale to the "Our Process" section
+
+- A comparison table section has been added above the FAQ, and it has been made fully responsive.
+
+- Added new Twitter icon (X) instead of the old one.
+
+Now I'm working on:
+
+- Added the bubble
+- Made the entire site with a dark theme. (If you don't like it, we'll return it back.)
