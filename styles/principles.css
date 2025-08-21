@@ -1,8 +1,10 @@
 .principles {
   padding: clamp(2rem, 4vw, 4rem) clamp(0rem, 2vw, 2rem);
-  background: #fafafa;
   position: relative;
   overflow: hidden;
+  
+  /* background: #fafafa; */
+  background: linear-gradient(to bottom, rgb(250, 250, 250) 0%, #ffffff 100%);
 }
 
 .principles-container {
@@ -316,10 +318,18 @@
 }
 
 /* staggered animation */
-.stack-card:nth-child(1).visible { transition-delay: 0s; }
-.stack-card:nth-child(2).visible { transition-delay: 0.15s; }
-.stack-card:nth-child(3).visible { transition-delay: 0.3s; }
-.stack-card:nth-child(4).visible { transition-delay: 0.45s; }
+.stack-card:nth-child(1).visible {
+  transition-delay: 0s;
+}
+.stack-card:nth-child(2).visible {
+  transition-delay: 0.15s;
+}
+.stack-card:nth-child(3).visible {
+  transition-delay: 0.3s;
+}
+.stack-card:nth-child(4).visible {
+  transition-delay: 0.45s;
+}
 
 /* underline effect */
 .stack-card::after {
@@ -363,7 +373,7 @@
 
 /* typography */
 .stack-card h4 {
-  font-size: clamp(1rem, 1.5vw, 1.0rem);
+  font-size: clamp(1rem, 1.5vw, 1rem);
   font-weight: 700;
   color: var(--primary-black);
 }
