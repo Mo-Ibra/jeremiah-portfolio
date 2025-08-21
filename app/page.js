@@ -1,6 +1,6 @@
 "use client";
 
-import CustomCursor from "@/components/CustomCursor";
+// import CustomCursor from "@/components/CustomCursor";
 import Hero from "@/components/Hero";
 import NoiseOverlay from "@/components/NoiseOverlay";
 import Preload from "@/components/Preload";
@@ -45,20 +45,20 @@ export default function Home() {
   return (
     <>
       {/* <CustomCursor /> */}
-      {/* <NoiseOverlay /> */}
-      {/* <Preload /> */}
+      <NoiseOverlay />
+      <Preload />
       <Navigation />
-      {/* <Hero /> */}
-      {/* <VideoReels /> */}
+      <Hero />
+      <VideoReels />
       {/* <Services /> */}
-      {/* <ServicesCarousel /> */}
-      {/* <Portfolio /> */}
-      {/* <About /> */}
-      {/* <Principles /> */}
-      {/* <Faqs /> */}
-      {/* <Contact onOpenQuiz={openQuiz} /> */}
-      {/* <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} /> */}
-      {/* <Footer /> */}
+      <ServicesCarousel />
+      <Portfolio />
+      <About />
+      <Principles />
+      <Faqs />
+      <Contact onOpenQuiz={openQuiz} />
+      <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} />
+      <Footer />
     </>
   );
 }
