@@ -22,7 +22,7 @@ const DTCComparison = () => {
               <div className="feature-list">
                 <div className="feature-item negative">
                   <span className="icon">👎</span>
-                  <span className="text">Boring 'Cookie Cutter' Ads</span>
+                  <span className="text">Boring &apos;Cookie Cutter&apos; Ads</span>
                 </div>
 
                 <div className="feature-item negative">
