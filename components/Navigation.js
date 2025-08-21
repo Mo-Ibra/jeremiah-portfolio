@@ -112,15 +112,23 @@ const Navigation = () => {
     initScrollEffects();
   }, []);
 
-  const scrollToSection = () => {
-    console.log("Scroll to section: I will add it....");
+  const scrollToSection = (section) => {
+    const target = document.getElementById(section);
+    if (target) {
+      const navHeight = document.getElementById("navbar").offsetHeight;
+      const targetPosition = target.offsetTop - navHeight - 20;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
     <div className="nav-outer-wrapper">
       <nav id="navbar">
         <div className="nav-container">
-          <div className="logo-area" onClick={scrollToSection("hero")}>
+          <div className="logo-area" onClick={() => scrollToSection("hero")}>
             <Image
               src={"/images/logo.png"}
               alt="Logo"

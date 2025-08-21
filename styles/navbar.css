@@ -284,7 +284,6 @@ nav.dark-section .mobile-menu-toggle span {
   }
 
   .nav-links {
-    display: none;
     position: fixed;
     top: calc(70px + var(--safe-area-inset-top));
     left: 20px;
@@ -294,7 +293,9 @@ nav.dark-section .mobile-menu-toggle span {
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transform: translateY(-120%);
-    transition: transform 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     border-radius: 20px;
     z-index: 999;
     max-height: calc(100vh - 100px - var(--safe-area-inset-top));
@@ -303,8 +304,9 @@ nav.dark-section .mobile-menu-toggle span {
   }
 
   .nav-links.active {
-    display: flex;
     transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
     margin-top: 40px;
   }
 

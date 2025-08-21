@@ -44,21 +44,21 @@ export default function Home() {
 
   return (
     <>
-      <CustomCursor />
-      <NoiseOverlay />
-      <Preload />
+      {/* <CustomCursor /> */}
+      {/* <NoiseOverlay /> */}
+      {/* <Preload /> */}
       <Navigation />
-      <Hero />
-      <VideoReels />
+      {/* <Hero /> */}
+      {/* <VideoReels /> */}
       {/* <Services /> */}
-      <ServicesCarousel />
-      <Portfolio />
-      <About />
-      <Principles />
-      <Faqs />
-      <Contact onOpenQuiz={openQuiz} />
-      <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} />
-      <Footer />
+      {/* <ServicesCarousel /> */}
+      {/* <Portfolio /> */}
+      {/* <About /> */}
+      {/* <Principles /> */}
+      {/* <Faqs /> */}
+      {/* <Contact onOpenQuiz={openQuiz} /> */}
+      {/* <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} /> */}
+      {/* <Footer /> */}
     </>
   );
 }
