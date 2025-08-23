@@ -7,19 +7,36 @@
   margin-top: -16rem; /* Move the section up */
 }
 
+/* TESTING BLACK */
+body.dark .video-reels {
+  background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+}
+
+.video-reels .grid-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
 /* Particles for Video Reels */
-.video-reels .particles {
+/* .video-reels .particles {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 1; /* Place above the background grid but below the content */
-}
+  z-index: 1;
+} */
 
 /* Particle styles */
-.video-reels .particle {
+/* .video-reels .particle {
   position: absolute;
   width: 4px;
   height: 4px;
@@ -28,21 +45,21 @@
   opacity: 0;
   animation: particleFloat 10s infinite;
   box-shadow: 0 0 6px var(--glow-green);
-}
+} */
 
 @media (max-width: 768px) {
   .video-reels {
     margin-top: -12rem;
   }
-  .video-reels .particle {
+  /* .video-reels .particle {
     width: 3px;
     height: 3px;
-    animation-duration: 15s; /* Slower for better performance */
-  }
+    animation-duration: 15s;
+  } */
 }
 
 /* Particle animation */
-@keyframes particleFloat {
+/* @keyframes particleFloat {
   0% {
     opacity: 0;
     transform: translateY(100vh) scale(0);
@@ -59,10 +76,10 @@
     opacity: 0;
     transform: translateY(-20vh) scale(0);
   }
-}
+} */
 
 /* Add Grid Background for Video Reels */
-.video-reels::before {
+/* .video-reels::before {
   content: "";
   position: absolute;
   top: 0;
@@ -73,12 +90,12 @@
     linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
   animation: gridMove 20s linear infinite;
-  z-index: -1; /* Place behind the content */
+  z-index: -1;
   pointer-events: none;
-}
+} */
 
 /* Keep the existing gradient at the bottom */
-.video-reels::after {
+/* .video-reels::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -93,7 +110,7 @@
   );
   pointer-events: none;
   z-index: 10;
-}
+} */
 
 /* Video Reels Container */
 .video-reels-container {

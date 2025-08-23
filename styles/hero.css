@@ -9,10 +9,11 @@
   position: relative;
   background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
   overflow: hidden;
+}
 
-
-  /* TESTING BLACK */
-  background: linear-gradient(135deg, rgb(0, 0, 0)0%, #111111 100%);
+/* TESTING BLACK */
+body.dark .hero {
+  background: black;
   color: white;
 }
 
@@ -741,22 +742,23 @@
   color: var(--primary-black);
   border: 2px solid rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
+}
 
-
-  /* TESTING BLACK */
+/* TESTING BLACK */
+body.dark .hero-btn-secondary {
   background: white;
 }
 
 @media (hover: hover) {
   .hero-btn-secondary:hover {
-    /* TESTING BLACK */
-
     /* background: rgba(0, 0, 0, 0.05); */
     border-color: var(--primary-black);
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
-    /* TESTING BLACK */
+  }
+  
+  /* TESTING BLACK */
+  body.dark .hero-btn-secondary:hover {
     background-color: rgba(white, white, white, 0.05);
   }
 }

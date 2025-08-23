@@ -18,7 +18,7 @@ const VideoReels = () => {
 
   return (
     <section id="video-reels" className="video-reels">
-      <div className="particles" id="particles"></div>
+      <div className="grid-background"></div>
       <div className="video-reels-container">
         <div className="reels-grid">
           { videoReels.map((reel, index) => (
