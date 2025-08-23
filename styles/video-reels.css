@@ -49,7 +49,7 @@ body.dark .video-reels {
 
 @media (max-width: 768px) {
   .video-reels {
-    margin-top: -12rem;
+    margin-top: -10rem;
   }
   /* .video-reels .particle {
     width: 3px;
