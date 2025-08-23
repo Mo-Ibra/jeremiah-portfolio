@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const PortfolioReelCard = ({
   aspectRatio = "9/16",
@@ -11,6 +12,18 @@ const PortfolioReelCard = ({
   authorName = "Jeremiah Smith",
   authorRole = "CEO, Company Name",
 }) => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+
+    if (window.innerWidth < 768) {
+      console.log("mobile");
+      setIsMobile(true);
+    }
+
+  }, [])
+
   return (
     <div className="portfolio-reel-card">
       <div
@@ -18,7 +31,7 @@ const PortfolioReelCard = ({
         style={{ aspectRatio: aspectRatio }}
       >
         <div
-          className={`wistia_embed wistia_async_${videoId} muted=true`}
+          className={`wistia_embed wistia_async_${videoId} muted=true ${isMobile && "autoPlay=false"}`}
           style={{ height: "100%", width: "100%" }}
         ></div>
 
