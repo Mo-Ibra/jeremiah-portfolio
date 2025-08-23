@@ -109,24 +109,8 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.05);
   transform-style: preserve-3d;
-  opacity: 0;
-  transform: translateY(40px) rotateX(-10deg);
-  overflow: hidden;
-}
-
-.attitude-card.visible {
   opacity: 1;
-  transform: translateY(0) rotateX(0);
-}
-
-.attitude-card:nth-child(1).visible {
-  transition-delay: 0s;
-}
-.attitude-card:nth-child(2).visible {
-  transition-delay: 0.1s;
-}
-.attitude-card:nth-child(3).visible {
-  transition-delay: 0.2s;
+  overflow: hidden;
 }
 
 .attitude-card::before {
@@ -207,25 +191,9 @@
   color: white;
   position: relative;
   overflow: hidden;
-  opacity: 0;
-  transform: translateY(60px) scale(0.9);
+  opacity: 1;
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.workflow-card.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-.workflow-card:nth-child(1).visible {
-  transition-delay: 0s;
-}
-.workflow-card:nth-child(2).visible {
-  transition-delay: 0.15s;
-}
-.workflow-card:nth-child(3).visible {
-  transition-delay: 0.3s;
 }
 
 .workflow-card::after {
@@ -305,30 +273,10 @@
   color: white;
   position: relative;
   overflow: hidden;
-  opacity: 0;
-  transform: translateY(60px) scale(0.9);
+  opacity: 1;
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.08);
   cursor: pointer;
-}
-
-.stack-card.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-/* staggered animation */
-.stack-card:nth-child(1).visible {
-  transition-delay: 0s;
-}
-.stack-card:nth-child(2).visible {
-  transition-delay: 0.15s;
-}
-.stack-card:nth-child(3).visible {
-  transition-delay: 0.3s;
-}
-.stack-card:nth-child(4).visible {
-  transition-delay: 0.45s;
 }
 
 /* underline effect */

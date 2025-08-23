@@ -47,23 +47,16 @@ export default function Principles() {
                 text: "Detailed creative analysis, reporting and optimisation allow us to determine exactly what messaging and angles are driving incremental improvements."
               }
             ].map((card, i) => (
-              <motion.div
+              <div
                 key={i}
                 className="workflow-card"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 30 }}
-                transition={{ delay: i * 0.2, duration: 0.6 }}
-                viewport={{ once: true }}
               >
-                <motion.div
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "100%" }}
-                  transition={{ duration: 1, delay: 0.3 + i * 0.3 }}
+                <div
                 />
                 <span className="card-number">{card.number}</span>
                 <h4>{card.step}</h4>
                 <p>{card.text}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -104,13 +97,9 @@ export default function Principles() {
                 icon: "/images/stack/6.png",
               },
             ].map((tool, i) => (
-              <motion.div
+              <div
                 key={i}
                 className="stack-card"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.15, duration: 0.6 }}
-                viewport={{ once: true }}
               >
                 <div className="stack-card-container">
                   <Image
@@ -125,7 +114,7 @@ export default function Principles() {
                     <p>{tool.desc}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -151,18 +140,14 @@ export default function Principles() {
                 text: "I deliver each ad approximately within 72 hours without sacrificing quality, ensuring you stay ahead of the competition.",
               },
             ].map((card, i) => (
-              <motion.div
+              <div
                 key={i}
                 className="attitude-card"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.2, duration: 0.6 }}
-                viewport={{ once: true }}
               >
                 <div className="card-number">{card.number}</div>
                 <h3>{card.title}</h3>
                 <p>{card.text}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
