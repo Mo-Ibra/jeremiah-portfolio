@@ -1,5 +1,5 @@
 .video-reels {
-  padding: clamp(4rem, 8vw, 6rem) 0;
+  padding: clamp(2rem, 4vw, 4rem) 0;
   background: linear-gradient(180deg, #f8f8f8 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
@@ -372,6 +372,7 @@
   cursor: pointer;
   border: 2px solid transparent;
   -webkit-tap-highlight-color: transparent;
+  z-index: 100;
 }
 
 .portfolio-cta-btn::before {

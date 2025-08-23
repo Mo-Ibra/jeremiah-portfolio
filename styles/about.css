@@ -1,6 +1,6 @@
 /* About */
 .about {
-  padding: clamp(4rem, 8vw, 6rem) 0;
+  padding: clamp(2rem, 4vw, 4rem) 0;
   overflow: hidden;
   position: relative;
   display: grid;

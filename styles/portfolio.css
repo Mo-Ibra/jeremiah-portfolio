@@ -1,5 +1,5 @@
 .portfolio {
-  padding: clamp(4rem, 8vw, 8rem) 0;
+  padding: clamp(2rem, 4vw, 4rem) 0;
   position: relative;
   overflow: hidden;
 

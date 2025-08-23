@@ -1,6 +1,6 @@
 .faqs-section {
   background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
-  padding: clamp(4rem, 8vw, 8rem) clamp(1rem, 3vw, 2rem);
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 2rem);
   position: relative;
   overflow: hidden;
 }
