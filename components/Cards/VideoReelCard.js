@@ -89,10 +89,10 @@ const VideoReelCard = ({
     <div className="reel-card">
       <div className="reel-wrapper" style={{ aspectRatio: aspectRatio }}>
         <div
-          className={`wistia_embed wistia_async_${videoId} ${
+          className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false ${
             isMobile ? "autoPlay=false" : ""
           }`}
-          style={{ height: "100%", width: "100%" }}
+          style={{ height: "100%", width: "100%", scale: "1.2", }}
         ></div>
 
         <div className="reel-overlay">

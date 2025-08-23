@@ -203,6 +203,11 @@
   pointer-events: none;
 }
 
+.portfolio-overlay > * {
+  /* Re-enable pointer events for overlay children */
+  pointer-events: auto;
+}
+
 .portfolio-info {
   position: absolute;
   bottom: 0;
