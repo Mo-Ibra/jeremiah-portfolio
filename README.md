@@ -58,7 +58,19 @@ Here are the fixes I made to the site:
 
 - Added new Twitter icon (X) instead of the old one.
 
-Now I'm working on:
+***
 
-- Added the bubble
-- Made the entire site with a dark theme. (If you don't like it, we'll return it back.)
+## V3:
+
+- All sections are now equal in height with no extra spacing between them.  
+- The first three sections have been styled with a dark theme. (If approved, the rest will follow the same style).  
+- Video is set to autoplay on desktop. (Note: Autoplay does not work on mobile due to browser restrictions).  
+- Removed the default mute tag and implemented a custom mute/unmute button from scratch.  
+- Wistia logo issue:
+  - The free plan forces a non-removable logo.
+  - As a workaround, the video has been slightly scaled to hide the logo without affecting quality.  
+- Removed animations from the **Process** and **FAQ** sections.  
+
+## In Progress
+- Navbar improvements for smoother interaction.
+- Add Google sheets API instead of Motion DB
