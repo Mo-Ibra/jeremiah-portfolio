@@ -24,71 +24,31 @@ const Navigation = () => {
 
     function initMobileMenu() {
       const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+      const navLinks = document.querySelector(".nav-links");
       const nav = document.getElementById("navbar");
-      let isMenuOpen = false;
 
-      function toggleMenu() {
-        isMenuOpen = !isMenuOpen;
-        
-        // Toggle active class for button animation
-        mobileMenuToggle.classList.toggle("active", isMenuOpen);
-        
-        // Toggle mobile menu active class for nav expansion
-        nav.classList.toggle("mobile-menu-active", isMenuOpen);
+      mobileMenuToggle.addEventListener("click", () => {
+        mobileMenuToggle.classList.toggle("active");
+        navLinks.classList.toggle("active");
 
-        // Handle body scroll - prevent scrolling when menu is open
-        if (isMenuOpen) {
-          document.body.style.overflow = "hidden";
-          // Add a small delay to ensure smooth animation
-          setTimeout(() => {
-            nav.style.zIndex = "1001";
-          }, 100);
-        } else {
-          document.body.style.overflow = "";
-          nav.style.zIndex = "1000";
-        }
-      }
-
-      function closeMenu() {
-        if (isMenuOpen) {
-          isMenuOpen = false;
-          mobileMenuToggle.classList.remove("active");
-          nav.classList.remove("mobile-menu-active");
-          document.body.style.overflow = "";
-          nav.style.zIndex = "1000";
-        }
-      }
-
-      mobileMenuToggle.addEventListener("click", (e) => {
-        e.stopPropagation();
-        toggleMenu();
+        document.body.style.overflow = navLinks.classList.contains("active")
+          ? "hidden"
+          : "";
       });
 
-      // Close menu when clicking on nav links
-      nav.querySelectorAll(".nav-links a").forEach((link) => {
+      navLinks.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
-          closeMenu();
+          mobileMenuToggle.classList.remove("active");
+          navLinks.classList.remove("active");
+          document.body.style.overflow = "";
         });
       });
 
-      // Close menu when clicking outside
       document.addEventListener("click", (e) => {
-        if (!nav.contains(e.target) && isMenuOpen) {
-          closeMenu();
-        }
-      });
-
-      // Close menu on escape key
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && isMenuOpen) {
-          closeMenu();
-        }
-      });
-
-      // Handle window resize - close menu if switching to desktop
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 920 && isMenuOpen) {
-          closeMenu();
+        if (!nav.contains(e.target) && navLinks.classList.contains("active")) {
+          mobileMenuToggle.classList.remove("active");
+          navLinks.classList.remove("active");
+          document.body.style.overflow = "";
         }
       });
     }
@@ -143,23 +103,6 @@ const Navigation = () => {
           window.requestAnimationFrame(updateScrollEffects);
           ticking = true;
         }
-      });
-
-      // Close mobile menu on scroll (but only if scrolling distance is significant)
-      let lastScrollTop = 0;
-      window.addEventListener("scroll", () => {
-        const navbar = document.getElementById("navbar");
-        const mobileMenuToggle = document.getElementById("mobileMenuToggle");
-        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Only close menu if user scrolled more than 50px
-        if (Math.abs(currentScroll - lastScrollTop) > 50 && navbar.classList.contains("mobile-menu-active")) {
-          mobileMenuToggle.classList.remove("active");
-          navbar.classList.remove("mobile-menu-active");
-          document.body.style.overflow = "";
-          navbar.style.zIndex = "1000";
-        }
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
       });
     }
 
