@@ -149,7 +149,7 @@ body.dark nav .brand-text p {
 
 .nav-links {
   display: flex;
-  gap: clamp(1.5rem, 3vw, 2.5rem);
+  gap: clamp(1.0rem, 2.5vw, 2.0rem);
   list-style: none;
   align-items: center;
   margin: 0;

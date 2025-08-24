@@ -46,7 +46,6 @@ body.dark .services .services-title .title-word {
   padding: 25px;
   width: 100%;
   max-width: 490px;
-  box-shadow: 0 8px 20px #111;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -59,7 +58,7 @@ body.dark .services .services-title .title-word {
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 255, 136, 0.5);
+  box-shadow: rgba(0, 255, 136, 0.5) 0px 6px 10px 0px;
   border-color: #00ff88;
   background-color: #f9fff9;
   color: black;
