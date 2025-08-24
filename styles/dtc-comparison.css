@@ -3,6 +3,8 @@
   padding: clamp(2rem, 4vw, 4rem) 0;
   position: relative;
   overflow: hidden;
+
+  background: linear-gradient(#0a0a0a 0%, #000000 100%);
 }
 
 .dtc-comparison-grid {
@@ -34,16 +36,22 @@
   top: -20px;
   right: 10%;
   font-size: 24px;
-  color: #ffd700;
+  color: var(--accent-green);
 }
 
-.main-heading {
-  font-size: 48px;
-  font-weight: 700;
+.dtc-comparison .dtc-title {
+  font-size: clamp(2.5rem, 5vw + 0.5rem, 5rem);
+  font-weight: 900;
+  margin-bottom: 3rem;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
   text-align: center;
-  color: #333;
-  margin-bottom: 60px;
-  line-height: 1.2;
+  color: #111;
+}
+
+/* TESTING BLACK */
+body.dark .dtc-comparison .dtc-title .title-word {
+  color: white;
 }
 
 .comparison-container {
@@ -108,7 +116,7 @@
 }
 
 .adcrate .box {
-  background-color: #ffd700 !important;
+  background-color: var(--accent-green) !important;
 }
 
 .brand-name {
@@ -125,8 +133,7 @@
     padding: 60px 16px;
   }
 
-  .main-heading {
-    font-size: 36px;
+  .dtc-header {
     margin-bottom: 40px;
   }
 
@@ -163,10 +170,6 @@
 }
 
 @media (max-width: 480px) {
-  .main-heading {
-    font-size: 28px;
-  }
-
   .column-title {
     font-size: 24px;
   }

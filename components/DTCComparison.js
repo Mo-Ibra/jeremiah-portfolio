@@ -3,14 +3,14 @@ const DTCComparison = () => {
     <section className="dtc-comparison">
       <div className="dtc-comparison-grid"></div>
       <div className="container">
+
         {/* Decorative star */}
         <div className="star-decoration">⭐</div>
 
-        {/* Main heading */}
-        <h2 className="main-heading">
-          Why 50+ Established
-          <br />
-          DTC Brands Trust Us
+        {/* Header */}
+        <h2 className="dtc-title">
+          <span className="title-word">Why</span>
+          <span className="title-word gradient-text">Us?</span>
         </h2>
 
         <div className="comparison-container">

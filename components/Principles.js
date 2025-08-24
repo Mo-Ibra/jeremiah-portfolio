@@ -10,7 +10,7 @@ export default function Principles() {
         {/* Header */}
         <div className="principles-header">
           <h2 className="split-text">
-            <span style={{ marginRight: "10px" }}>My</span>
+            <span style={{ marginRight: "10px", color: "white" }}>My</span>
             <span>Process</span>
           </h2>
           <p className="header-subtitle">
@@ -44,15 +44,11 @@ export default function Principles() {
               {
                 number: "4.",
                 step: "Scale",
-                text: "Detailed creative analysis, reporting and optimisation allow us to determine exactly what messaging and angles are driving incremental improvements."
-              }
+                text: "Detailed creative analysis, reporting and optimisation allow us to determine exactly what messaging and angles are driving incremental improvements.",
+              },
             ].map((card, i) => (
-              <div
-                key={i}
-                className="workflow-card"
-              >
-                <div
-                />
+              <div key={i} className="workflow-card">
+                <div />
                 <span className="card-number">{card.number}</span>
                 <h4>{card.step}</h4>
                 <p>{card.text}</p>
@@ -97,10 +93,7 @@ export default function Principles() {
                 icon: "/images/stack/6.png",
               },
             ].map((tool, i) => (
-              <div
-                key={i}
-                className="stack-card"
-              >
+              <div key={i} className="stack-card">
                 <div className="stack-card-container">
                   <Image
                     width={40}
@@ -140,10 +133,7 @@ export default function Principles() {
                 text: "I deliver each ad approximately within 72 hours without sacrificing quality, ensuring you stay ahead of the competition.",
               },
             ].map((card, i) => (
-              <div
-                key={i}
-                className="attitude-card"
-              >
+              <div key={i} className="attitude-card">
                 <div className="card-number">{card.number}</div>
                 <h3>{card.title}</h3>
                 <p>{card.text}</p>

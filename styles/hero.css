@@ -14,7 +14,7 @@
 /* TESTING BLACK */
 body.dark .hero {
   background: black;
-  color: white;
+  color: var(--primary-white);
 }
 
 /* Particle System - Optimize for mobile */

@@ -74,3 +74,4 @@ Here are the fixes I made to the site:
 ## In Progress
 - Navbar improvements for smoother interaction.
 - Add Google sheets API instead of Motion DB
+- Make website dark. 
