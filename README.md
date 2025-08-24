@@ -70,8 +70,8 @@ Here are the fixes I made to the site:
   - The free plan forces a non-removable logo.
   - As a workaround, the video has been slightly scaled to hide the logo without affecting quality.  
 - Removed animations from the **Process** and **FAQ** sections.  
+- Make website dark.
 
 ## In Progress
 - Navbar improvements for smoother interaction.
 - Add Google sheets API instead of Motion DB
-- Make website dark. 
