@@ -71,7 +71,7 @@ Here are the fixes I made to the site:
   - As a workaround, the video has been slightly scaled to hide the logo without affecting quality.  
 - Removed animations from the **Process** and **FAQ** sections.  
 - Make website dark.
+- Navbar improvements for smoother interaction.
 
 ## In Progress
-- Navbar improvements for smoother interaction.
 - Add Google sheets API instead of Motion DB
