@@ -1,7 +1,8 @@
 /* Optimized CTA Section */
 .cta-section {
   padding: clamp(6rem, 10vw, 10rem) clamp(1rem, 4vw, 4rem);
-  background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+  /* background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); */
+  background: linear-gradient(rgb(10, 10, 10) 0%, rgb(0, 0, 0) 100%);
   color: var(--primary-white);
   text-align: center;
   position: relative;

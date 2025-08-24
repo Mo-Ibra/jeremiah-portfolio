@@ -105,7 +105,7 @@
 }
 
 .attitude-card {
-  background: white;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
   border-radius: 24px;
   padding: clamp(2rem, 4vw, 3rem);
   position: relative;
@@ -164,7 +164,7 @@
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--primary-black);
+  color: var(--primary-white);
   letter-spacing: -0.01em;
 }
 
@@ -270,7 +270,7 @@
 }
 
 .stack-card {
-  background-color: white;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
   border-radius: 12px;
   padding: clamp(1rem, 2vw, 1.5rem);
   color: white;
@@ -304,7 +304,7 @@
 @media (hover: hover) {
   .stack-card:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 4px 16px #ddd;
+    box-shadow: 0 4px 16px #111;
     border-color: var(--accent-green);
   }
 }
@@ -326,7 +326,7 @@
 .stack-card h4 {
   font-size: clamp(1rem, 1.5vw, 1rem);
   font-weight: 700;
-  color: var(--primary-black);
+  color: var(--primary-white);
 }
 .stack-card p {
   font-size: clamp(0.95rem, 1.5vw, 1rem);

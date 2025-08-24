@@ -48,7 +48,7 @@
 
 .about-greeting {
   font-size: 2.25rem;
-  color: #1f2937;
+  color: var(--primary-white);
   font-weight: 400;
   margin-bottom: 2rem;
 }
@@ -73,21 +73,21 @@
 .about-name {
   font-size: 2.25rem;
   font-weight: 300;
-  color: #1f2937;
+  color: var(--primary-white);
   margin-bottom: 2rem;
 }
 
 .about-title {
   font-size: 0.75rem;
   font-weight: 500;
-  color: #6b7280;
+  color: var(--primary-white);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 .about-description {
-  color: #4b5563;
+  color: var(--gray-text);
   line-height: 1.625;
   font-size: 0.875rem;
   max-width: 20rem;
@@ -104,12 +104,12 @@
 
 .about-socials a {
   font-size: 1.8rem;
-  color: #1f2937;
+  color: var(--gray-text);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .about-socials a:hover {
-  color: #00cc6a;
+  color: var(--accent-green);
   transform: translateY(-3px);
 }
 

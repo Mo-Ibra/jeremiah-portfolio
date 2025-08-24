@@ -20,7 +20,7 @@
   -webkit-tap-highlight-color: transparent;
 }
  
-:root {
+:root { 
   --primary-black: #000000;
   --primary-white: #ffffff;
   --gray-text: #666666;
@@ -55,7 +55,7 @@
 }
 
 /* Improved iOS/Safari fixes */
-html {
+html {  
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
