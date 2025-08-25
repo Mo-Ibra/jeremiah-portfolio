@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   z-index: 0; /* Ensure it's not overlapping the grid */
-  margin-top: -16rem; /* Move the section up */
+  margin-top: -12rem; /* Move the section up */
 }
 
 /* TESTING BLACK */

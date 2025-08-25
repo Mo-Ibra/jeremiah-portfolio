@@ -11,11 +11,18 @@ export default function NewNavigation() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToHero = () => {
+    const heroSection = document.getElementById("hero");
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo Section */}
-        <div className="navbar-brand">
+        <div className="navbar-brand" onClick={scrollToHero}>
           <div className="brand-icon">
             <Image
               src={"/images/logo.png"}
