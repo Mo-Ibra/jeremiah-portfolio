@@ -161,6 +161,12 @@ body.dark .hero {
 }
 
 @media (max-width: 768px) {
+  .metric-badge.cpc {
+    display: none;
+  }
+  .metric-badge.ctr {
+    display: none;
+  }
   .hero-decorative-left,
   .hero-decorative-right {
     display: none;
@@ -504,7 +510,7 @@ body.dark .hero {
 @media (max-width: 480px) {
   .hero-headline {
     font-size: clamp(1.5rem, 7vw, 2.5rem);
-    margin-top: 20px;
+    margin-top: 35px;
   }
 }
 
@@ -832,6 +838,9 @@ body.dark .hero-btn-secondary {
 }
 
 @media (max-width: 480px) {
+  .trust-strip {
+    margin-top: 0;
+  }
   .trust-strip::before,
   .trust-strip::after {
     display: none;
