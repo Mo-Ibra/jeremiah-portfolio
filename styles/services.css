@@ -8,7 +8,7 @@
 
 /* TESTING BLACK */
 body.dark .services {
-  background: linear-gradient(180deg, #0a0a0a 0%, #000 100%);
+  background: linear-gradient(180deg, #000 0%, #000000 100%);
 }
 
 .services-container {
