@@ -9,6 +9,19 @@
   position: relative;
   background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
   overflow: hidden;
+
+  /* Background */
+  background-image: radial-gradient(
+      ellipse closest-corner at 50% 40%,
+      rgba(15, 15, 15, 0.87),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../public/images/hero/1.jpg") !important;
+  
+  background-size: auto, cover !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-blend-mode: normal !important;
 }
 
 /* TESTING BLACK */

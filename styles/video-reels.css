@@ -9,7 +9,7 @@
 
 /* TESTING BLACK */
 body.dark .video-reels {
-  background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+  background: linear-gradient(180deg, #050505 0%, #0a0a0a 100%);
 }
 
 .video-reels .grid-background {

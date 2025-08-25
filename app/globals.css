@@ -21,7 +21,7 @@
   -webkit-tap-highlight-color: transparent;
 } 
 
-:root {
+:root {     
   --primary-black: #000000;
   --primary-white: #ffffff;
   --gray-text: #666666;
