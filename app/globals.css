@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-@import "../styles/navbar.css";
+/* @import "../styles/navbar.css"; */
+@import "../styles/new-navbar.css";
 @import "../styles/hero.css";
 @import "../styles/video-reels.css";
 @import "../styles/about.css";
@@ -12,21 +13,21 @@
 @import "../styles/quiz-modal.css";
 @import "../styles/footer.css";
 @import "../styles/preload.css";
-
+ 
 * {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-}
- 
-:root {  
+} 
+
+:root {
   --primary-black: #000000;
-  --primary-white: #ffffff;
+  --primary-white: #ffffff;     
   --gray-text: #666666;
   --light-gray: #f5f5f5;
   --accent-green: #00ff88; 
-  --accent-red: #ff4444;
+  --accent-red: #ff4444;  
   --accent-blue: #4a90e2;
   --accent-purple: #9b59b6;
   --glow-green: rgba(0, 255, 136, 0.6);

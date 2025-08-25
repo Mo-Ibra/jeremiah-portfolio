@@ -14,7 +14,8 @@ import DTCComparison from "@/components/DTCComparison";
 import Faqs from "@/components/Faqs";
 import Contact from "@/components/Contact";
 import QuizModal from "@/components/QuizModal";
-import Navigation from "@/components/Navigation";
+// import Navigation from "@/components/Navigation";
+import NewNavigation from "@/components/NewNavigation";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 
@@ -46,9 +47,10 @@ export default function Home() {
   return (
     <>
       {/* <CustomCursor /> */}
-      <NoiseOverlay />
-      <Preload />
-      <Navigation />
+      {/* <NoiseOverlay /> */}
+      {/* <Preload /> */}
+      {/* <Navigation /> */}
+      <NewNavigation />
       <Hero />
       <VideoReels />
       {/* <Services /> */}
