@@ -257,9 +257,16 @@
 }
 
 @media (max-width: 480px) {
-  .navbar .brand-text {
-    display: none;
+
+  .navbar .brand-text .brand-name {
+    text-align: left;
+    font-size: 12px;
   }
+
+  .navbar .brand-text .brand-tagline {
+    font-size: 10px;
+  }
+  
   .navbar .navbar-container {
     padding: 0 0.75rem;
   }
