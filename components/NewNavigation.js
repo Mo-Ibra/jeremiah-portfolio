@@ -111,19 +111,12 @@ export default function NewNavigation() {
             Process
           </Link>
           <Link
-            href="#faqs"
-            className="mobile-nav-link"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            FAQs
-          </Link>
-          {/* <Link
             href="#contact"
             className="mobile-cta-button"
             onClick={() => setIsMenuOpen(false)}
           >
-            Let's Talk
-          </Link> */}
+            Book Meeting
+          </Link>
         </div>
       </div>
     </nav>
