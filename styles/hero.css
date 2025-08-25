@@ -626,6 +626,7 @@ body.dark .hero {
 
   .underline-creative::after {
     height: 0.12em;
+    display: none;
   }
 }
 
