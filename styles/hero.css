@@ -161,9 +161,7 @@ body.dark .hero {
 }
 
 @media (max-width: 768px) {
-  .metric-badge.cpc {
-    display: none;
-  }
+  .metric-badge.cpc,
   .metric-badge.ctr {
     display: none;
   }
@@ -762,7 +760,7 @@ body.dark .hero-btn-secondary {
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
-  
+
   /* TESTING BLACK */
   body.dark .hero-btn-secondary:hover {
     background-color: rgba(white, white, white, 0.05);
