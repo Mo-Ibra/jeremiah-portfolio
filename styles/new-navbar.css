@@ -109,6 +109,7 @@
   transition: all 0.3s ease;
   border: none;
   font-weight: bold;
+  text-transform: none;
 }
 
 /* Mobile Menu Button */
@@ -211,6 +212,7 @@
   transform: translateY(-1px);
 }
 
+/* Small Screen */
 @media (max-width: 1024px) {
   .navbar .brand-name {
     font-size: 1rem;
@@ -224,7 +226,7 @@
   }
 }
 
-/* Responsive Design */
+/* Tablet */
 @media (max-width: 768px) {
   .navbar .navbar-menu {
     display: none;
@@ -256,6 +258,7 @@
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
 
   .navbar .brand-text .brand-name {
