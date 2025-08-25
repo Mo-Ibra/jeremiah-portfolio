@@ -56,7 +56,7 @@ export default function NewNavigation() {
         {/* CTA Button */}
         <div className="navbar-cta">
           <Link href="#contact" className="cta-button">
-            Let's Talk
+            Let&apos;s Talk
           </Link>
         </div>
 
