@@ -74,11 +74,11 @@ const Hero = () => {
         </div>
         <div className="metric-badge roas">
           <span className="metric-dot"></span>
-          ROAS 4.8x
+          ROAS ↑4.8x
         </div>
         <div className="metric-badge cpc">
           <span className="metric-dot"></span>
-          CPC $0.42
+          CPC ↓$0.42
         </div>
         <div className="metric-badge ctr">
           <span className="metric-dot"></span>
