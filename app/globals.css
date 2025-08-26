@@ -80,7 +80,7 @@ html {
   .noise-overlay {
     opacity: 0.02; /* Reduce for performance */
   }
-} 
+}    
   
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
