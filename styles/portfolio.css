@@ -5,7 +5,7 @@
 
   /* background: linear-gradient(180deg, #fafafa 0%, #ffffff 50%, #f8f8f8 100%); */
 
-  background: linear-gradient(#000000 0%, #0a0a0a 100%);
+  background: linear-gradient(180deg, #0a0a0a 0%, #000000 50%, #0a0a0a 100%);
   min-height: auto;
 }
 
