@@ -102,7 +102,7 @@
 .navbar .cta-button {
   background-color: var(--accent-green);
   color: var(--primary-black);
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.0rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
@@ -222,7 +222,7 @@
   }
 
   .navbar .navbar-cta .cta-button {
-    padding: 0.7rem 1.2rem;
+    padding: 0.5rem 1rem;
     font-size: 12px;
   }
 }
