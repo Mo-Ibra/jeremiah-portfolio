@@ -82,7 +82,7 @@ const Hero = () => {
         </div>
         <div className="metric-badge ctr">
           <span className="metric-dot"></span>
-          CTR ↓3.2%
+          CTR ↑3.2%
         </div>
       </div>
 
