@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -24,12 +23,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <Script
-          id="fb-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+      <Script
+        id="fb-pixel"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
                 !function(f,b,e,v,n,t,s)
                 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -41,11 +39,11 @@ export default function RootLayout({ children }) {
                 fbq('init', '1445819513351775');
                 fbq('track', 'PageView');
               `,
-          }}
-        />
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `
+        }}
+      />
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: `
               <img
                 height="1"
                 width="1"
@@ -53,9 +51,8 @@ export default function RootLayout({ children }) {
                 src="https://www.facebook.com/tr?id=1445819513351775&ev=PageView&noscript=1"
               />
             `,
-          }}
-        />
-      </Head>
+        }}
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
