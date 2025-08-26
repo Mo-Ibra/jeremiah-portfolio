@@ -2,8 +2,8 @@
 
 // import CustomCursor from "@/components/CustomCursor";
 import Hero from "@/components/Hero";
-import NoiseOverlay from "@/components/NoiseOverlay";
-import Preload from "@/components/Preload";
+// import NoiseOverlay from "@/components/NoiseOverlay";
+// import Preload from "@/components/Preload";
 import VideoReels from "@/components/VideoReels";
 // import Services from "@/components/Services";
 import ServicesCarousel from "@/components/ServicesCarousel";
@@ -18,6 +18,7 @@ import QuizModal from "@/components/QuizModal";
 import NewNavigation from "@/components/NewNavigation";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   const [isQuizOpen, setIsQuizOpen] = useState(false);
@@ -63,6 +64,8 @@ export default function Home() {
       <Contact onOpenQuiz={openQuiz} />
       <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} />
       <Footer />
+
+      <ScrollToTop />
     </>
   );
 }
