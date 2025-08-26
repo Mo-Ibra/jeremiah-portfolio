@@ -79,7 +79,7 @@ html {
 @media (max-width: 768px) {
   .noise-overlay {
     opacity: 0.02; /* Reduce for performance */
-  } 
+  }   
 }
 
 body {
