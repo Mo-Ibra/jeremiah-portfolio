@@ -65,7 +65,19 @@ const QuizModal = ({ isOpen, onClose }) => {
 
     try {
       console.log("Quiz submission:", formData);
-      
+
+      if (typeof window.fbq === "function") {
+        fbq("track", "QuizSubmit", {
+          platform: formData.platform,
+          niche: formData.niche,
+          website: formData.website,
+          adSpend: formData.adSpend,
+          ctr: formData.ctr,
+          conversionRate: formData.conversionRate,
+          email: formData.email,
+        });
+      }
+
       const res = await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -76,8 +88,10 @@ const QuizModal = ({ isOpen, onClose }) => {
         setShowSuccess(true);
 
         // Redirect to calendly
-        window.open("https://calendly.com/jeremiah-harcharran-qrd_/30min", "_blank");
-
+        window.open(
+          "https://calendly.com/jeremiah-harcharran-qrd_/30min",
+          "_blank"
+        );
       } else {
         console.error("Failed to send email");
       }
