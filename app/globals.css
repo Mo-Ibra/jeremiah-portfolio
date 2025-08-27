@@ -167,6 +167,6 @@ body {
   .gradient-text {
     -webkit-text-fill-color: black;
     color: black;
-    font-weight: 900;
+    font-weight: 900;         
   }
 }

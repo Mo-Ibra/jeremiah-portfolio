@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { FaRegLightbulb, FaUsers } from "react-icons/fa";
+import { IoMdTrendingUp } from "react-icons/io";
 
 export default function Principles() {
   return (
@@ -30,28 +32,49 @@ export default function Principles() {
                 number: "1.",
                 step: "Onboarding",
                 text: "Great work starts with listening — so I begin by learning the heart of your brand, your market, your audience, and your goals.",
+                workflowIcon: (
+                  <FaUsers className="workflow-bubble-icon" />
+                ),
+                workflowText: "Audience Research",
               },
               {
                 number: "2.",
                 step: "Post-production",
                 text: "With a deep understanding of your brand and goals, I dive into creating ads that blend psychology, design, and data for maximum impact.",
+                workflowIcon: (
+                  <FaRegLightbulb className="workflow-bubble-icon" />
+                ),
+                workflowText: "Creative Production",
               },
               {
                 number: "3.",
                 step: "Launch & Optimize",
                 text: "I iterate on creatives to make sure your ads deliver results, tracking performance metrics and optimizing for continuous improvement.",
+                workflowIcon: (
+                  <FaRegLightbulb className="workflow-bubble-icon" />
+                ),
+                workflowText: "Ad Optimisation",
               },
               {
                 number: "4.",
                 step: "Scale",
                 text: "Detailed creative analysis, reporting and optimisation allow us to determine exactly what messaging and angles are driving incremental improvements.",
+                workflowIcon: (
+                  <IoMdTrendingUp className="workflow-bubble-icon" />
+                ),
+                workflowText: "Scaling Efficiency",
               },
             ].map((card, i) => (
               <div key={i} className="workflow-card">
                 <div />
                 <span className="card-number">{card.number}</span>
-                <h4>{card.step}</h4>
-                <p>{card.text}</p>
+                <h4 className="card-title">{card.step}</h4>
+                <p className="card-description">{card.text}</p>
+
+                <div className="workflow-bubble">
+                  <div className="workflow-bubble-icon-container">{card.workflowIcon}</div>
+                  <p className="workflow-bubble-text">{card.workflowText}</p>
+                </div>
               </div>
             ))}
           </div>
