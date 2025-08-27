@@ -11,6 +11,15 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-grid"></div>
+
+      {/* Header */}
+      <div className="about-main-header">
+        <h2 className="about-main-title">
+          <span className="title-word" style={{ marginRight: "10px" }}>About</span>
+          <span className="title-word gradient-text">Me</span>
+        </h2>
+      </div>
+
       <div className="about-container">
         {/* Greeting */}
         <div className="about-left">
