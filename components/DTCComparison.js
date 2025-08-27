@@ -43,8 +43,8 @@ const DTCComparison = () => {
             </div>
           </div>
 
-          {/* Adcrate Column */}
-          <div className="adcrate">
+          {/* Jeremiah Column */}
+          <div className="jeremiah">
             <div className="box">
               <div className="brand-name">Jeremiah.</div>
 

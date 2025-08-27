@@ -110,13 +110,14 @@ body.dark .dtc-comparison .dtc-title .title-word {
   font-weight: 500;
 }
 
-.adcrate {
+.jeremiah {
   flex: 1;
   max-width: 400px;
 }
 
-.adcrate .box {
+.jeremiah .box {
   border: 1px solid var(--accent-green);
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
 }
 
 .brand-name {
@@ -144,7 +145,7 @@ body.dark .dtc-comparison .dtc-title .title-word {
   }
 
   .other,
-  .adcrate {
+  .jeremiah {
     max-width: 100%;
     width: 100%;
   }
