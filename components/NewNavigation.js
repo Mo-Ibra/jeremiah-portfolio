@@ -111,7 +111,7 @@ export default function NewNavigation() {
             About
           </Link>
           <Link
-            href="/process"
+            href="#principles"
             className="mobile-nav-link"
             onClick={() => setIsMenuOpen(false)}
           >
