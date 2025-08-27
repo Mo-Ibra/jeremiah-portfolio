@@ -20,8 +20,16 @@ const VideoReels = () => {
     <section id="video-reels" className="video-reels">
       <div className="grid-background"></div>
       <div className="video-reels-container">
+        <div className="video-reels-header">
+          <p>
+            I’ve created <span className="gradient-text">1,000+</span> ads that 
+            <br />have generated{" "}
+            <span className="gradient-text">$1M+</span> in sales
+          </p>
+        </div>
+
         <div className="reels-grid">
-          { videoReels.map((reel, index) => (
+          {videoReels.map((reel, index) => (
             <VideoReelCard key={index} {...reel} />
           ))}
         </div>
