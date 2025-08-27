@@ -91,7 +91,7 @@ body {
   /* overflow-x: hidden; */
   position: relative;  
   -webkit-overflow-scrolling: touch; 
-}  
+}   
 
 /* Performance optimizations */
 @media (prefers-reduced-motion: reduce) {
