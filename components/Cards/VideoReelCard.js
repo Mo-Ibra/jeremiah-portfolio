@@ -91,6 +91,7 @@ const VideoReelCard = ({
         <div
           className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false`}
           style={{ height: "100%", width: "100%", scale: "1.2", }}
+          onClick={handleMute}
         ></div>
 
         <div className="reel-overlay">
