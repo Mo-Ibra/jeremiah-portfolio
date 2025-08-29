@@ -13,7 +13,7 @@
 
 .principles-header {
   text-align: center;
-  margin-bottom: clamp(4rem, 8vw, 8rem);
+  margin-bottom: clamp(2rem, 4vw, 4rem);
 }
 
 .principles-header h2 {
