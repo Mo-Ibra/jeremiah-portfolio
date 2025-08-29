@@ -9,6 +9,7 @@
 @import "../styles/principles.css";
 @import "../styles/faq.css";
 @import "../styles/dtc-comparison.css";
+@import "../styles/case-studies.css";
 @import "../styles/cta.css";
 @import "../styles/quiz-modal.css";
 @import "../styles/footer.css";
@@ -168,6 +169,6 @@ body {
   .gradient-text {
     -webkit-text-fill-color: black;
     color: black;
-    font-weight: 900;         
+    font-weight: 900;
   }
 }
