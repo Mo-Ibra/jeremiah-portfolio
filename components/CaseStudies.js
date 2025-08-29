@@ -72,7 +72,7 @@ export default function CaseStudies() {
           </div>
           <h2 className="main-title">Case Studies & <br /> <span className="gradient-text">Success Stories</span></h2>
           <p className="subtitle">
-            Recent highlights from past/current brands we've helped scale
+            Recent highlights from past/current brands we&apos;ve helped scale
           </p>
         </div>
 
