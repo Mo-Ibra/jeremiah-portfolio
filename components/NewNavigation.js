@@ -20,6 +20,12 @@ export default function NewNavigation() {
 
   return (
     <nav className="navbar">
+      
+      {/* Announcement */}
+      <div className="announcement-bar">
+        <p>We&apos;re parntering with 3 new brands this month.</p>
+      </div>
+
       <div className="navbar-container">
         {/* Logo Section */}
         <div className="navbar-brand" onClick={scrollToHero}>

@@ -10,6 +10,14 @@
   transition: all 0.3s ease;
 }
 
+.announcement-bar {
+  background: linear-gradient(135deg, var(--accent-green) 0%, #00cc6a 100%);
+  color: var(--primary-white);
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
 .navbar-container {
   max-width: 1200px;
   margin: 0 auto;

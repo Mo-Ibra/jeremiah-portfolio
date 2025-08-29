@@ -25,10 +25,14 @@
   }
 }
 
-.container {
+.dtc-comparison .container {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+
+  background: #111;
+  padding: 30px;
+  border-radius: 20px;
 }
 
 .star-decoration {
@@ -117,7 +121,7 @@ body.dark .dtc-comparison .dtc-title .title-word {
 
 .jeremiah .box {
   border: 1px solid var(--accent-green);
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #2b2a2a 0%, #1a1a1a 100%);
 }
 
 .brand-name {
