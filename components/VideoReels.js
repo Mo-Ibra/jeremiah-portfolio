@@ -34,12 +34,12 @@ const VideoReels = () => {
           ))}
         </div>
 
-        <div className="portfolio-cta-container">
+        {/* <div className="portfolio-cta-container">
           <a href="#portfolio" className="portfolio-cta-btn">
             <span className="btn-text">See Full Portfolio</span>
             <span className="btn-arrow">→</span>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
