@@ -72,6 +72,10 @@ body.dark .dtc-comparison .dtc-title .title-word {
   max-width: 350px;
 }
 
+.other .box {
+  background: linear-gradient(135deg, #2b2a2a 0%, #1a1a1a 100%);
+}
+
 .box {
   background-color: transparent;
   border-radius: 16px;
@@ -85,7 +89,7 @@ body.dark .dtc-comparison .dtc-title .title-word {
   font-weight: 600;
   color: var(--primary-white);
   margin-bottom: 32px;
-  text-align: left;
+  text-align: center;
 }
 
 .feature-list {
@@ -99,6 +103,7 @@ body.dark .dtc-comparison .dtc-title .title-word {
   align-items: flex-start;
   gap: 12px;
   padding: 8px 0;
+  justify-content: center;
 }
 
 .feature-item .icon {
@@ -128,7 +133,6 @@ body.dark .dtc-comparison .dtc-title .title-word {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 32px;
-  text-align: left;
   color: var(--accent-green);
 }
 
