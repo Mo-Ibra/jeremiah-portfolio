@@ -3,9 +3,6 @@ const DTCComparison = () => {
     <section className="dtc-comparison">
       <div className="dtc-comparison-grid"></div>
       <div className="container">
-        {/* Decorative star */}
-        <div className="star-decoration">⭐</div>
-
         {/* Header */}
         <h2 className="dtc-title">
           <span className="title-word">
