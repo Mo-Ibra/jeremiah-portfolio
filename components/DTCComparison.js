@@ -3,14 +3,14 @@ const DTCComparison = () => {
     <section className="dtc-comparison">
       <div className="dtc-comparison-grid"></div>
       <div className="container">
-
         {/* Decorative star */}
         <div className="star-decoration">⭐</div>
 
         {/* Header */}
         <h2 className="dtc-title">
-          <span className="title-word">Why Established</span>
-          <span className="title-word gradient-text">DTC</span>
+          <span className="title-word">
+            Why Established <span className="gradient-text">DTC</span>
+          </span>
           <span className="title-word">Brands Work With Me?</span>
         </h2>
 
@@ -23,7 +23,9 @@ const DTCComparison = () => {
               <div className="feature-list">
                 <div className="feature-item negative">
                   <span className="icon">👎</span>
-                  <span className="text">Boring &apos;Cookie Cutter&apos; Ads</span>
+                  <span className="text">
+                    Boring &apos;Cookie Cutter&apos; Ads
+                  </span>
                 </div>
 
                 <div className="feature-item negative">
@@ -75,7 +77,7 @@ const DTCComparison = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default DTCComparison
+export default DTCComparison;
