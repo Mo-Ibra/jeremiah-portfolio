@@ -9,8 +9,9 @@ const DTCComparison = () => {
 
         {/* Header */}
         <h2 className="dtc-title">
-          <span className="title-word">Why</span>
-          <span className="title-word gradient-text">Us?</span>
+          <span className="title-word">Why Established</span>
+          <span className="title-word gradient-text">DTC</span>
+          <span className="title-word">Brands Work With Me?</span>
         </h2>
 
         <div className="comparison-container">
