@@ -5,10 +5,12 @@
   align-items: center;
   justify-content: center;
   padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 4rem);
-  padding-top: calc(clamp(4rem, 10vw, 6rem) + var(--safe-area-inset-top));
+  padding-top: calc(clamp(0rem, 0vw, 0rem) + var(--safe-area-inset-top));
   position: relative;
   background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
   overflow: hidden;
+
+  bottom: 4rem;
 
   /* Background */
   background-image: radial-gradient(

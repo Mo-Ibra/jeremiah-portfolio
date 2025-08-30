@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   z-index: 0; /* Ensure it's not overlapping the grid */
-  margin-top: -16rem; /* Move the section up */
+  margin-top: -20rem; /* Move the section up */
 }
 
 /* TESTING BLACK */
@@ -49,7 +49,7 @@ body.dark .video-reels {
 
 @media (max-width: 768px) {
   .video-reels {
-    margin-top: -10rem;
+    margin-top: -14rem;
   }
   /* .video-reels .particle {
     width: 3px;
@@ -122,8 +122,8 @@ body.dark .video-reels {
 /* Reels Header */
 .video-reels-header {
   text-align: center;
-  margin-top: clamp(2.5rem, 5.5vw, 3.5rem);
-  margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+  margin-top: clamp(0.5rem, 2.0vw, 1.0rem);
+  margin-bottom: clamp(0.5rem, 2.0vw, 1.0rem);
   letter-spacing: -0.02em;
   opacity: 0;
   transform: translateY(20px);
