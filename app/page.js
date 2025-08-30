@@ -58,7 +58,7 @@ export default function Home() {
       <Hero />
       <VideoReels />
       <ServicesCarousel />
-      {/* <Portfolio /> */}
+      <Portfolio />
       <CaseStudies />
       <About />
       <Principles />
