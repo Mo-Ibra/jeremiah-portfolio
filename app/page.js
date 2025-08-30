@@ -59,7 +59,7 @@ export default function Home() {
       <VideoReels />
       <ServicesCarousel />
       <Portfolio />
-      {/* <CaseStudies /> */}
+      <CaseStudies />
       <About />
       <Principles />
       <DTCComparison />

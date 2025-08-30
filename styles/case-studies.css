@@ -1,5 +1,6 @@
 .case-studies {
-  padding: max(2rem, min(4vw, 4rem)) max(0rem, min(2vw, 2rem)) 0;
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 2rem);
+  background: linear-gradient(#0a0a0a 0%, #000000 25%, #0a0a0a 100%);
   position: relative;
   overflow: hidden;
 }
