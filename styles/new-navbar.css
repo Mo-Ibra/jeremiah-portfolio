@@ -156,7 +156,7 @@
   transform: rotate(-45deg) translate(4px, -4px);
 }
 
-/* Mobile Menu */
+/* Mobile Menu - Smooth slide down/up animation */
 .mobile-menu {
   position: absolute;
   top: 100%;
@@ -164,16 +164,13 @@
   right: 0;
   background-color: var(--primary-black);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  transform: translateY(-100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .mobile-menu.open {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
+  max-height: 400px; /* Adjust based on your content */
 }
 
 .mobile-menu-content {
@@ -181,7 +178,14 @@
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-  /* border: 1px solid #252525; */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease 0.15s, transform 0.4s ease 0.15s;
+}
+
+.mobile-menu.open .mobile-menu-content {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mobile-nav-link {
@@ -282,5 +286,10 @@
   
   .navbar .navbar-container {
     padding: 0 0.75rem;
+  }
+
+  /* Adjust mobile menu max-height for smaller screens */
+  .mobile-menu.open {
+    max-height: 380px;
   }
 }
