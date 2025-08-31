@@ -66,14 +66,7 @@ export default function Principles() {
               <div key={i} className="workflow-card">
                 <div />
                 <span className="card-number">
-                  <motion.span
-                    initial={{ opacity: 0}} 
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 3, ease: "easeOut" }}
-                    viewport={{ once: true }}
-                  >
-                    {card.number}
-                  </motion.span>
+                  <span>{card.number}</span>
                 </span>
                 <h4 className="card-title">{card.step}</h4>
                 <p className="card-description">{card.text}</p>
@@ -96,7 +89,13 @@ export default function Principles() {
             {/* Header */}
             <h2 className="dtc-title">
               <span className="title-word">
-                Why Established <span className="gradient-text">DTC</span>
+                Why Established{" "}
+                <span
+                  className="gradient-text"
+                  style={{ display: "inline-block" }}
+                >
+                  DTC
+                </span>
               </span>
               <span className="title-word">Brands Work With Me?</span>
             </h2>

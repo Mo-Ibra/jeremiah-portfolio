@@ -39,7 +39,7 @@ export default function NewNavigation() {
             />
           </div>
           <div className="brand-text">
-            <h1 className="brand-name">Jeremiah Harcharran.</h1>
+            <h1 className="brand-name">Jeremiah Harcharran</h1>
             <p className="brand-tagline">Performance Creative Partner</p>
           </div>
         </div>
