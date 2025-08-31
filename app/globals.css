@@ -64,7 +64,7 @@ html {
 }
 
 /* Noise Texture Overlay - Optimize for mobile */
-.noise-overlay {
+.noise-overlay { 
   position: fixed;
   top: 0;
   left: 0; 

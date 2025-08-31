@@ -101,10 +101,11 @@ export default function Principles() {
             </h2>
 
             <div className="comparison-container">
+              
               {/* Other Agencies Column */}
               <div className="other">
                 <div className="box">
-                  <h3 className="other-heading">Others</h3>
+                  <h3 className="other-heading">Agencies</h3>
 
                   <div className="feature-list">
                     <div className="feature-item negative">
