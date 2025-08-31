@@ -83,4 +83,8 @@ Here are the fixes I made to the site:
 - Make the headers text equal each other.
 
 ## In Progress
+- Fix the About me section on mobile
+- Add an Image to the Our Process section, like adcrate website
+- Make animation (Like steps) on workflow section like adcrate website.
+- Make the mobile with just one section for videos, as we explained before.
 - Add Google sheets API instead of Motion DB
