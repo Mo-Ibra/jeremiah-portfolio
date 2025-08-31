@@ -56,7 +56,7 @@
 }
 
 /* .attitude-section { */
-  /* margin-bottom: clamp(1rem, 2vw, 2rem); */
+/* margin-bottom: clamp(1rem, 2vw, 2rem); */
 /* } */
 
 .section-label {
@@ -375,6 +375,19 @@ body.dark .dtc-comparison .dtc-title .title-word {
   color: var(--primary-white);
   margin-bottom: 32px;
   text-align: center;
+
+  position: relative;
+}
+
+.column-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: var(--gray-text);
 }
 
 .feature-list {
@@ -420,6 +433,20 @@ body.dark .dtc-comparison .dtc-title .title-word {
   margin-bottom: 32px;
   color: var(--accent-green);
   text-align: center;
+
+  position: relative;
+}
+
+/* Make a line under brand name */
+.brand-name::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: var(--gray-text);
 }
 
 /* Responsive Design */
