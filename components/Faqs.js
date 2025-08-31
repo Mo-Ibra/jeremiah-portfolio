@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-
 import { faqData } from "@/data/data";
 
 const Faqs = () => {
@@ -15,7 +14,10 @@ const Faqs = () => {
           </h2>
           <div className="faq-list">
             {faqData.map((faq, index) => (
-              <div key={index} className="faq-item">
+              <div 
+                key={index} 
+                className={`faq-item ${faq.answer.length > 150 ? 'long-answer' : ''}`}
+              >
                 <input type="checkbox" id={`faq${index}`} />
                 <label className="faq-question" htmlFor={`faq${index}`}>
                   <span className="faq-index">
@@ -23,7 +25,11 @@ const Faqs = () => {
                   </span>
                   <span>{faq.question}</span>
                 </label>
-                <div className="faq-answer">{faq.answer}</div>
+                <div className="faq-answer">
+                  <div className="faq-answer-content">
+                    {faq.answer}
+                  </div>
+                </div>
               </div>
             ))}
           </div>

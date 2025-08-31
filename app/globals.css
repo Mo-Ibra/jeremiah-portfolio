@@ -8,18 +8,16 @@
 @import "../styles/portfolio.css";
 @import "../styles/principles.css";
 @import "../styles/faq.css";
-@import "../styles/dtc-comparison.css";
 @import "../styles/case-studies.css";
 @import "../styles/cta.css";
 @import "../styles/quiz-modal.css";
 @import "../styles/footer.css";
 @import "../styles/preload.css";
 
-
-* {   
-  margin: 0;    
-  padding: 0; 
-  box-sizing: border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 

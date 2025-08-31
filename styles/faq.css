@@ -118,7 +118,7 @@
   position: absolute;
   right: 0;
   font-size: clamp(1.5rem, 3vw, 2rem);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   color: var(--accent-green);
   font-weight: 300;
 }
@@ -134,20 +134,29 @@
   font-weight: 400;
   font-size: clamp(1rem, 1.8vw, 1.05rem);
   color: var(--gray-text);
-  /* margin-left: clamp(2rem, 4vw, 3rem); */
   margin-top: 0;
   line-height: 1.8;
-  transform: translateY(-10px);
-  transition: all 0.5s ease;
+  transform: translateY(-15px);
+  transition: max-height 0.6s ease, 
+              opacity 0.4s ease 0.2s, 
+              transform 0.4s ease 0.2s,
+              margin-top 0.6s ease;
+}
+
+.faq-answer-content {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #2b2a2a 0%, #1a1a1a 100%);
+  border-radius: 1rem;
 }
 
 .faq-item input:checked ~ .faq-answer {
-  max-height: 1000px;
+  max-height: 200px; /* Reduced from 1000px for smoother animation */
   opacity: 1;
   margin-top: 1rem;
   transform: translateY(0);
+}
 
-  background: linear-gradient(135deg, #2b2a2a 0%, #1a1a1a 100%);
-  padding: 1rem;
-  border-radius: 1rem;
+/* For longer FAQ answers */
+.faq-item.long-answer input:checked ~ .faq-answer {
+  max-height: 300px;
 }
