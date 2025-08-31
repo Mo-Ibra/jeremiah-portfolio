@@ -65,7 +65,16 @@ export default function Principles() {
             ].map((card, i) => (
               <div key={i} className="workflow-card">
                 <div />
-                <span className="card-number">{card.number}</span>
+                <span className="card-number">
+                  <motion.span
+                    initial={{ opacity: 0}} 
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 2, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                  >
+                    {card.number}
+                  </motion.span>
+                </span>
                 <h4 className="card-title">{card.step}</h4>
                 <p className="card-description">{card.text}</p>
 
