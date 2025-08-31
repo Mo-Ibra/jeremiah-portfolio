@@ -62,7 +62,7 @@ export default function Home() {
       <CaseStudies />
       <About />
       <Principles />
-      <DTCComparison />
+      {/* <DTCComparison /> */}
       <Faqs />
       <Contact onOpenQuiz={openQuiz} />
       <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} />
