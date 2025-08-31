@@ -69,7 +69,7 @@ export default function Principles() {
                   <motion.span
                     initial={{ opacity: 0}} 
                     whileInView={{ opacity: 1 }}
-                    transition={{ duration: 2, ease: "easeOut" }}
+                    transition={{ duration: 3, ease: "easeOut" }}
                     viewport={{ once: true }}
                   >
                     {card.number}
