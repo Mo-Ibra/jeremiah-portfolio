@@ -105,7 +105,7 @@ export default function Principles() {
               {/* Other Agencies Column */}
               <div className="other">
                 <div className="box">
-                  <h3 className="column-title">Other Agencies</h3>
+                  <h3 className="other-heading">Others</h3>
 
                   <div className="feature-list">
                     <div className="feature-item negative">
@@ -136,7 +136,7 @@ export default function Principles() {
               {/* Jeremiah Column */}
               <div className="jeremiah">
                 <div className="box">
-                  <div className="brand-name">Jeremiah</div>
+                  <div className="jeremiah-heading">Jeremiah</div>
 
                   <div className="feature-list">
                     <div className="feature-item positive">

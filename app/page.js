@@ -10,7 +10,6 @@ import ServicesCarousel from "@/components/ServicesCarousel";
 import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
 import Principles from "@/components/Principles";
-import DTCComparison from "@/components/DTCComparison";
 import CaseStudies from "@/components/CaseStudies";
 import Faqs from "@/components/Faqs";
 import Contact from "@/components/Contact";
@@ -62,7 +61,6 @@ export default function Home() {
       <CaseStudies />
       <About />
       <Principles />
-      {/* <DTCComparison /> */}
       <Faqs />
       <Contact onOpenQuiz={openQuiz} />
       <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} />

@@ -369,7 +369,7 @@ body.dark .dtc-comparison .dtc-title .title-word {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.column-title {
+.other-heading {
   font-size: 32px;
   font-weight: 600;
   color: var(--primary-white);
@@ -379,7 +379,7 @@ body.dark .dtc-comparison .dtc-title .title-word {
   position: relative;
 }
 
-.column-title::after {
+.other-heading::after {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -427,7 +427,7 @@ body.dark .dtc-comparison .dtc-title .title-word {
   background: linear-gradient(135deg, #2b2a2a 0%, #1a1a1a 100%);
 }
 
-.brand-name {
+.jeremiah-heading {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 32px;
@@ -438,7 +438,7 @@ body.dark .dtc-comparison .dtc-title .title-word {
 }
 
 /* Make a line under brand name */
-.brand-name::after {
+.jeremiah-heading::after {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -475,7 +475,7 @@ body.dark .dtc-comparison .dtc-title .title-word {
     padding: 24px 20px;
   }
 
-  .column-title {
+  .other-heading {
     font-size: 28px;
     text-align: center;
     margin-bottom: 24px;
@@ -485,18 +485,18 @@ body.dark .dtc-comparison .dtc-title .title-word {
     font-size: 16px;
   }
 
-  .brand-name {
+  .jeremiah-heading {
     font-size: 32px;
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .column-title {
+  .other-heading {
     font-size: 24px;
   }
 
-  .brand-name {
+  .jeremiah-heading {
     font-size: 28px;
   }
 
