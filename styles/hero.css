@@ -672,7 +672,8 @@ body.dark .hero {
 
 @media (max-width: 920px) {
   .hero-subtitle {
-    margin-top: -5px; /* add 10-15px space from the title */
+    margin-top: 2.5px;
+    margin-bottom: 10px;
   }
 }
 
