@@ -468,28 +468,26 @@ export const aboutData = {
 
 export const faqData = [
   {
-    question: "Do you cover any additional advertising services?",
-    answer:
-      "Absolutely. You may want to consider additional add-ons such as scriptwriting and briefing. As our collaboration evolves, I may expand services to support more of your digital growth.",
-  },
-  {
-    question: "What makes you different?",
-    answer:
-      "I'm proud of my core principles that set me apart in the creative marketing landscape. My approach is rooted in structured storytelling, performance-driven thinking, and authentic partnerships.",
-  },
-  {
     question: "How do we know your ads will work for our brand?",
     answer:
       "My process is deeply collaborative. I research your brand and audience, then build high-converting ad content backed by performance insights and consistent iteration.",
   },
   {
-    question: "What does your pricing look like?",
+    question: "How long until we get our first ads?",
     answer:
-      "Pricing is tailored based on your goals and scope. I don't do generic packages—every quote is custom, clear, and value-focused with zero hidden fees.",
+      "My turnaround time is ridiculously fast. If there is existing content I can deliver the first set of ads within 6 to 12 days depending on complexity. If content is needing to be sourced, then the initial time taken will be longer - around 21 to 28 days. This includes time for strategy development, creative production, and any necessary revisions to ensure top-quality content - once everything is set in place, content will be delivered to you every Sunday.",
   },
   {
-    question: "Why not hire a full-time editor or agency?",
+    question: "What does your pricing look like?",
     answer:
-      "Great question. Hiring full-time costs $60k+ annually with overhead—and often, underutilization. Agencies? Add markup, bureaucracy, and delays. I deliver fast, strategic creative when and how you need it.",
+      "Pricing is tailored based on your goals and scope. I don't do generic packages - every quote is custom, clear, value-focused with zero hidden fees; and fair for both parties.For a no obligation quote - use the form below, and lets talk about it.",
   },
+  {
+    question: "What's the commitment?",
+    answer: "Our standard agreement requires a minimum commitment of 3 months. This allow us to effectively plan, execute, and optimize your campaigns for the best possible results.",
+  },
+  {
+    question: "What are next steps?",
+    answer: "Fill out the form below, book a meeting with me and lets talk about your brand! Please note that due to high demand, I can't take on all applicant. Thus, each submission will be reviewed to check for compatibility - some may be rejected pre-call."
+  }
 ];
