@@ -351,7 +351,7 @@ export const servicesData = [
   {
     title: "User Generated Content",
     description:
-      "Product seeding campaigns to collect authentic content & find brand ambassadors that never stop CR8TING.",
+      "Authentic high-converting, organic style user generated content, made to engage and resonate with your target audience",
     imagesCarousel: [
       {
         id: 1,
@@ -373,7 +373,7 @@ export const servicesData = [
   {
     title: "Studio Content",
     description:
-      "High production content that will WOW your customers and ELEV8TE your brand. All in one place.",
+      "High Production Studio content that will WOW your consumers, build trust, and elevate your brand",
     imagesCarousel: [
       {
         id: 1,
@@ -395,7 +395,7 @@ export const servicesData = [
   {
     title: "AI Generated Content",
     description:
-      "Harnessing the power of AI, we generate hyper-realistic content that turns ordinary content into CR8TIVE.",
+      "Hyper-realistic AI generated content made for quick testing and iteration - so we can cut costs and scale at the speed of light",
     imagesCarousel: [
       {
         id: 1,
