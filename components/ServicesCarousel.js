@@ -7,6 +7,7 @@ import { useState } from "react";
 import ServicesCarouselCard from "./Cards/ServicesCarouselCard";
 
 import { servicesData } from "@/data/data";
+import Header from "./Header";
 
 export default function ServicesCarousel() {
   const [currentSlides, setCurrentSlides] = useState({
@@ -19,7 +20,8 @@ export default function ServicesCarousel() {
     setCurrentSlides((prev) => ({
       ...prev,
       [sectionIndex]:
-        (prev[sectionIndex] + 1) % servicesData[sectionIndex].imagesCarousel.length,
+        (prev[sectionIndex] + 1) %
+        servicesData[sectionIndex].imagesCarousel.length,
     }));
   };
 
@@ -34,24 +36,25 @@ export default function ServicesCarousel() {
   };
 
   return (
-    <section
-      className="services"
-      id="services"
-    >
+    <section className="services" id="services">
       <div className="services-container">
-        <h2 className="services-title">
-          <span className="title-word">My</span>
-          <span className="title-word gradient-text">Services</span>
-        </h2>
+        {/* <h2 className="services-title">
+          <span className="title-word">UGC Content + Studio Content + AI =</span>
+          <br />
+          <span className="title-word gradient-text">The Ultimate Growth Engine for DTC</span>
+        </h2> */}
 
-        <div
-          className="services-cards"
-        >
+        <Header badgeText={"Here’s what I can do for your brandvices"}>
+          <h2 className="main-title">
+            UGC Content + Studio Content + AI = {" "} <br />
+            <span className="gradient-text">The Ultimate Growth Engine for DTC</span>
+          </h2>
+        </Header>
+
+        <div className="services-cards">
           {servicesData.map((service, serviceIndex) => (
-            <div
-              key={serviceIndex}
-            >
-               <ServicesCarouselCard
+            <div key={serviceIndex}>
+              <ServicesCarouselCard
                 key={serviceIndex}
                 serviceIndex={serviceIndex}
                 service={service}

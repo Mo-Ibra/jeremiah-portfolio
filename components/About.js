@@ -6,6 +6,7 @@ import { aboutData } from "@/data/data";
 
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Header from "./Header";
 
 const About = () => {
   return (
@@ -13,12 +14,23 @@ const About = () => {
       <div className="about-grid"></div>
 
       {/* Header */}
-      <div className="about-main-header">
+      {/* <div className="about-main-header">
         <h2 className="about-main-title">
-          <span className="title-word" style={{ marginRight: "10px" }}>About</span>
-          <span className="title-word gradient-text">Me</span>
+          <span className="title-word" style={{ marginRight: "10px" }}>
+            The Talent Behind Your
+          </span>
+          <br />
+          <span className="title-word gradient-text">Creative Success</span>
         </h2>
-      </div>
+      </div> */}
+
+      <Header badgeText={"About Me"} marginBottom="1.5rem">
+        <h2 className="main-title">
+          The Talent Behind Your
+          <br />
+          <span className="gradient-text">Creative Success</span>
+        </h2>
+      </Header>
 
       <div className="about-container">
         {/* Greeting */}

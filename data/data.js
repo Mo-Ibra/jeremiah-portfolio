@@ -373,7 +373,7 @@ export const servicesData = [
   {
     title: "Studio Content",
     description:
-      "High Production Studio content that will WOW your consumers, build trust, and elevate your brand",
+      "High Production Studio content that will WOW your consumers, build trust, and elevate your brand presence globally",
     imagesCarousel: [
       {
         id: 1,
