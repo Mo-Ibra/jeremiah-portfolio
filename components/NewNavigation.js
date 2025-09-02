@@ -23,7 +23,7 @@ export default function NewNavigation() {
       
       {/* Announcement */}
       <div className="announcement-bar">
-        <p>We&apos;re parntering with 3 new brands this month.</p>
+        <p>Partnering with 1 more new brand this month</p>
       </div>
 
       <div className="navbar-container">
