@@ -12,9 +12,9 @@ export default function Principles() {
       <div className="principles-container">
         <Header badgeText={"My Process"}>
           <h2 className="main-title">
-            This is EXACTLY what will
+            This is <span className="gradient-text">EXACTLY</span> what will
             <br />
-            <span className="gradient-text">happen when you work with me</span>
+            <span>happen when you <span className="gradient-text">work with me</span></span>
           </h2>
         </Header>
 
