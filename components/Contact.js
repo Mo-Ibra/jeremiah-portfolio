@@ -8,7 +8,7 @@ const Contact = ({ onOpenQuiz }) => {
       </div>
       <div className="cta-content">
         <h2>Ready to Scale Your Brand?</h2>
-        <p>For quality purpose, I work with only 2–4 brands at a time.</p>
+        <p>For quality purposes, I work with only 2–4 brands at a time.</p>
         <p>Apply below to speak with me and secure your spot.</p>
         <button className="cta-button" onClick={onOpenQuiz}>
           BOOK MEETING
