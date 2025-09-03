@@ -33,7 +33,7 @@ const Portfolio = () => {
         <Header badgeText={"My Creative Portfolio"}>
           <h2 className="main-title">
             <span className="gradient-text">REAL Stories</span> That <span className="gradient-text">Solve</span>  <br />{" "}
-            <span className="gradient-text">REAL PROBLEMS!</span>
+            <span className="gradient-text">REAL PROBLEMS</span>
           </h2>
           <p className="subtitle">
             Each ad is crafted based on deep research, historical consumer data,

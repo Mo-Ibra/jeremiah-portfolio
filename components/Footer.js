@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const [time, setTime] = useState("");
@@ -36,8 +36,14 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
-        <p className="footer-time">{getDate()} - {time}</p>
-        <p>Local time in London, United Kingdom</p>
+        <p className="footer-time">
+          {getDate()} - {time}
+        </p>
+        <p>
+          Local time in London, United Kingdom
+          <br />
+          <span>jeremiah@harcharran.com</span>
+        </p>
 
         {/* 🌐 Social Icons */}
         <div className="footer-socials">
@@ -67,7 +73,9 @@ const Footer = () => {
           </a>
         </div>
 
-        <p>&copy; {getCurrentYear()} Jeremiah Harcharran. All rights reserved.</p>
+        <p>
+          &copy; {getCurrentYear()} Jeremiah Harcharran. All rights reserved.
+        </p>
         <div className="footer-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
