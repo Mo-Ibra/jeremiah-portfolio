@@ -13,17 +13,6 @@ const About = () => {
     <section id="about" className="about">
       <div className="about-grid"></div>
 
-      {/* Header */}
-      {/* <div className="about-main-header">
-        <h2 className="about-main-title">
-          <span className="title-word" style={{ marginRight: "10px" }}>
-            The Talent Behind Your
-          </span>
-          <br />
-          <span className="title-word gradient-text">Creative Success</span>
-        </h2>
-      </div> */}
-
       <Header badgeText={"About Me"} marginBottom="1.5rem">
         <h2 className="main-title">
           The Talent Behind Your

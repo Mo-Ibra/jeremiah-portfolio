@@ -10,33 +10,12 @@ export default function Principles() {
   return (
     <section id="principles" className="principles">
       <div className="principles-container">
-        {/* Header */}
-        {/* <div className="principles-header">
-          <h2 className="split-text">
-            <span style={{ marginRight: "10px", color: "white" }}>This is EXACTLY what will</span>
-            <br />
-            <span>happen when you work with me</span>
-          </h2>
-          <p className="header-subtitle">
-            Every creator has their own code —<br />
-            for both work and ethics.
-            <br />
-            <span className="highlight text-green-500">So do I.</span>
-          </p>
-        </div> */}
-
         <Header badgeText={"My Process"}>
           <h2 className="main-title">
             This is EXACTLY what will
             <br />
             <span className="gradient-text">happen when you work with me</span>
           </h2>
-          <p className="subtitle">
-            Every creator has their own code —<br />
-            for both work and ethics.
-            <br />
-            <span className="highlight text-green-500 gradient-text">So do I.</span>
-          </p>
         </Header>
 
         {/* WORKFLOW Section */}

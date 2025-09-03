@@ -30,19 +30,6 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio">
       <div className="portfolio-container">
-        {/* <div className="portfolio-header">
-          <h2 className="portfolio-title">
-            <span className="title-word gradient-text">
-              REAL Stories That Solve REAL Problems
-            </span>
-          </h2>
-          <p>
-            Each ad is crafted based on deep research, historical consumer data,
-            and emotional & behavioural psychographics to really resonate with
-            and solve consumer problems, concerns, and issues
-          </p>
-        </div> */}
-
         <Header badgeText={"My Creative Portfolio"}>
           <h2 className="main-title">
             REAL Stories That Solve  <br />{" "}

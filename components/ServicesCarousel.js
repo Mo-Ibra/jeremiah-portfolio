@@ -38,11 +38,6 @@ export default function ServicesCarousel() {
   return (
     <section className="services" id="services">
       <div className="services-container">
-        {/* <h2 className="services-title">
-          <span className="title-word">UGC Content + Studio Content + AI =</span>
-          <br />
-          <span className="title-word gradient-text">The Ultimate Growth Engine for DTC</span>
-        </h2> */}
 
         <Header badgeText={"Here’s what I can do for your brandvices"}>
           <h2 className="main-title">

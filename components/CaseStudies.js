@@ -64,17 +64,6 @@ export default function CaseStudies() {
   return (
     <section className="case-studies">
       <div className="container">
-        {/* Header */}
-        {/* <div className="header">
-          <div className="success-badge">
-            <span>📊</span>
-            Success Stories
-          </div>
-          <h2 className="main-title">Case Studies & <br /> <span className="gradient-text">Success Stories</span></h2>
-          <p className="subtitle">
-            Recent highlights from past/current brands we&apos;ve helped scale
-          </p>
-        </div> */}
 
         <Header badgeText={"Success Stories"}>
           <h2 className="main-title">
