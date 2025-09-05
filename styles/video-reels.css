@@ -416,6 +416,103 @@ body.dark .video-reels {
   font-style: italic;
 }
 
+/* Want More Button - Mobile Only */
+.want-more-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.want-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: clamp(1rem, 2vw, 1.25rem) clamp(2rem, 4vw, 2.5rem);
+  background: var(--primary-black);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: 2px solid transparent;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 100;
+}
+
+.want-more-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 136, 0.2),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+@media (hover: hover) {
+  .want-more-btn:hover::before {
+    left: 100%;
+  }
+
+  .want-more-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+  }
+}
+
+.want-more-btn:active {
+  transform: translateY(-1px);
+}
+
+.want-more-btn .btn-text {
+  transition: all 0.3s ease;
+}
+
+.want-more-btn .btn-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+@media (hover: hover) {
+  .want-more-btn:hover .btn-icon {
+    transform: translateX(5px);
+  }
+}
+
+/* Hide on desktop */
+@media (min-width: 769px) {
+  .want-more-container {
+    display: none;
+  }
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 768px) {
+  .want-more-container {
+    padding: 0 1rem;
+  }
+  
+  .want-more-btn {
+    min-width: 140px;
+    justify-content: center;
+  }
+}
+
 /* Optimized Portfolio CTA Button */
 .portfolio-cta-container {
   text-align: center;

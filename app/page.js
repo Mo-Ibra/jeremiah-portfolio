@@ -22,6 +22,18 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   const [isQuizOpen, setIsQuizOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const openQuiz = () => {
     setIsQuizOpen(true);
@@ -57,7 +69,10 @@ export default function Home() {
       <Hero />
       <VideoReels />
       <ServicesCarousel />
-      <Portfolio />
+      
+      {/* Portfolio - Hide on mobile */}
+      {!isMobile && <Portfolio />}
+      
       <CaseStudies />
       <About />
       <Principles />
