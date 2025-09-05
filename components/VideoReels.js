@@ -57,7 +57,7 @@ const VideoReels = () => {
       <div className="video-reels-container">
         <div className="video-reels-header">
           <p>
-            I've created <span className="gradient-text">1,000+</span> ads that
+            I&apos;ve created <span className="gradient-text">1,000+</span> ads that
             <br />
             have generated <span className="gradient-text">$1M+</span> in sales
           </p>
