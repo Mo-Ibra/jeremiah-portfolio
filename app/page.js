@@ -65,6 +65,8 @@ export default function Home() {
       {/* <Navigation /> */}
       {/* <Services /> */}
 
+      <ScrollToTop />
+      
       <NewNavigation />
       <Hero />
       <VideoReels />
@@ -81,7 +83,6 @@ export default function Home() {
       <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} />
       <Footer />
 
-      <ScrollToTop />
     </>
   );
 }
