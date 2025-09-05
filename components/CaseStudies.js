@@ -6,11 +6,14 @@ import {
   FiTrendingUp,
   FiMousePointer,
   FiTarget,
+  FiChevronLeft,
+  FiChevronRight,
 } from "react-icons/fi";
 import Header from "./Header";
 
-const caseStudies = {
-  AccentStudios: {
+const caseStudies = [
+  {
+    id: "AccentStudios",
     badge: "RGB Lighting (Our Brand)",
     title: "Accent Studio",
     revenue: "$931,968.93",
@@ -25,7 +28,8 @@ const caseStudies = {
       roas: "3.14x",
     },
   },
-  "Viva Reveal": {
+  {
+    id: "Viva Reveal",
     badge: "Beauty & Wellness",
     title: "Viva Reveal",
     revenue: "$1,245,832.17",
@@ -40,7 +44,8 @@ const caseStudies = {
       roas: "4.18x",
     },
   },
-  Pathos: {
+  {
+    id: "Pathos",
     badge: "Tech & Innovation",
     title: "Pathos",
     revenue: "$687,543.29",
@@ -55,16 +60,31 @@ const caseStudies = {
       roas: "4.41x",
     },
   },
-};
+];
 
 export default function CaseStudies() {
-  const [activeCase, setActiveCase] = useState("AccentStudios");
-  const currentCase = caseStudies[activeCase];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const currentCase = caseStudies[currentIndex];
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === caseStudies.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? caseStudies.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
 
   return (
     <section className="case-studies">
       <div className="container">
-
         <Header badgeText={"Success Stories"}>
           <h2 className="main-title">
             Case Studies & <br />{" "}
@@ -78,14 +98,46 @@ export default function CaseStudies() {
         {/* Main Case Study Card */}
         <div className="case-study-card">
           <div className="card-grid">
-            {/* Left Side - Image */}
+            {/* Left Side - Image with Carousel */}
             <div className="image-container">
               <img
                 src={currentCase.image || "/placeholder.svg"}
                 alt={currentCase.imageAlt}
                 className="case-image"
               />
-              <div className="image-badge">{activeCase}</div>
+              <div className="image-badge">{currentCase.id}</div>
+              
+              {/* Carousel Navigation */}
+              <div className="navigation">
+                <button 
+                  onClick={prevSlide}
+                  className="nav-buttons"
+                  aria-label="Previous case study"
+                >
+                  <FiChevronLeft />
+                </button>
+                <button 
+                  onClick={nextSlide}
+                  className="nav-buttons"
+                  aria-label="Next case study"
+                >
+                  <FiChevronRight />
+                </button>
+              </div>
+
+              {/* Carousel Indicators */}
+              <div className="indicators">
+                {caseStudies.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`indicator ${
+                      index === currentIndex ? 'active' : 'inactive'
+                    }`}
+                    aria-label={`Go to case study ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
 
             {/* Right Side - Content */}
@@ -144,18 +196,17 @@ export default function CaseStudies() {
                 </div>
               </div>
 
-              {/* Tags */}
+              {/* Display Tags - Non-functional */}
               <div className="tags-container">
-                {Object.keys(caseStudies).map((caseKey) => (
-                  <button
-                    key={caseKey}
-                    onClick={() => setActiveCase(caseKey)}
-                    className={`tag-button ${
-                      activeCase === caseKey ? "active" : "inactive"
+                {caseStudies.map((caseStudy, index) => (
+                  <div
+                    key={caseStudy.id}
+                    className={`tag-display ${
+                      index === currentIndex ? "active" : "inactive"
                     }`}
                   >
-                    {caseKey}
-                  </button>
+                    {caseStudy.id}
+                  </div>
                 ))}
               </div>
             </div>
