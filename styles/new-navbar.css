@@ -289,7 +289,7 @@
   }
 
   /* Adjust mobile menu max-height for smaller screens */
-  .mobile-menu.open {
+  /* .mobile-menu.open {
     max-height: 380px;
-  }
+  } */
 }

@@ -5,6 +5,7 @@ import { videoReels, portfolioReels } from "@/data/data";
 const VideoReels = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [visibleCount, setVisibleCount] = useState(4);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   // Check if device is mobile
   useEffect(() => {
@@ -35,20 +36,51 @@ const VideoReels = () => {
   useEffect(() => {
     if (!isMobile) {
       setVisibleCount(videoReels.length);
+      setIsExpanded(false);
     } else {
       setVisibleCount(4);
+      setIsExpanded(false);
     }
   }, [isMobile]);
 
   // Choose data source based on device
   const reelsData = isMobile ? portfolioReels : videoReels;
-  const displayedReels = isMobile
-    ? reelsData.slice(0, visibleCount)
-    : reelsData;
+  const displayedReels = isMobile ? reelsData.slice(0, visibleCount) : reelsData;
   const hasMore = isMobile && visibleCount < reelsData.length;
+  const isFullyExpanded = isMobile && visibleCount >= reelsData.length;
 
   const handleWantMore = () => {
-    setVisibleCount((prev) => Math.min(prev + 4, reelsData.length));
+    const newCount = Math.min(visibleCount + 4, reelsData.length);
+    setVisibleCount(newCount);
+    setIsExpanded(true);
+  };
+
+  const handleCollapse = () => {
+    setVisibleCount(4);
+    setIsExpanded(false);
+  };
+
+  // Determine button text and action
+  const getButtonConfig = () => {
+    if (!isExpanded && visibleCount === 4) {
+      return {
+        text: "See Full Portfolio",
+        icon: "→",
+        action: handleWantMore
+      };
+    } else if (hasMore) {
+      return {
+        text: "Want More?",
+        icon: "+",
+        action: handleWantMore
+      };
+    } else if (isFullyExpanded) {
+      return {
+        text: "Collapse",
+        icon: "−",
+        action: handleCollapse
+      };
+    }
   };
 
   return (
@@ -70,16 +102,17 @@ const VideoReels = () => {
           ))}
         </div>
 
-        {/* Want More Button - Mobile Only */}
-        {isMobile && hasMore && (
+        {/* Dynamic Button - Mobile Only */}
+        {isMobile && (visibleCount === 4 || hasMore || isFullyExpanded) && (
           <div className="want-more-container">
-            <button onClick={handleWantMore} className="want-more-btn">
-              <span className="btn-text">Want More</span>
-              <span className="btn-icon">+</span>
+            <button onClick={getButtonConfig().action} className="want-more-btn">
+              <span className="btn-text">{getButtonConfig().text}</span>
+              <span className="btn-icon">{getButtonConfig().icon}</span>
             </button>
           </div>
         )}
 
+        {/* Desktop Portfolio CTA */}
         {!isMobile && (
           <div className="portfolio-cta-container">
             <a href="#portfolio" className="portfolio-cta-btn">

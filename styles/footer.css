@@ -72,7 +72,7 @@ footer::before {
 }
 
 .footer-content p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-size: clamp(0.875rem, 1.5vw, 0.95rem);
 }
 
