@@ -57,7 +57,8 @@ const VideoReels = () => {
       <div className="video-reels-container">
         <div className="video-reels-header">
           <p>
-            I&apos;ve created <span className="gradient-text">1,000+</span> ads that
+            I&apos;ve created <span className="gradient-text">1,000+</span> ads
+            that
             <br />
             have generated <span className="gradient-text">$1M+</span> in sales
           </p>
@@ -70,14 +71,16 @@ const VideoReels = () => {
         </div>
 
         {/* Want More Button - Mobile Only */}
-        {isMobile && hasMore ? (
+        {isMobile && hasMore && (
           <div className="want-more-container">
             <button onClick={handleWantMore} className="want-more-btn">
               <span className="btn-text">Want More</span>
               <span className="btn-icon">+</span>
             </button>
           </div>
-        ) : (
+        )}
+
+        {!isMobile && (
           <div className="portfolio-cta-container">
             <a href="#portfolio" className="portfolio-cta-btn">
               <span className="btn-text">See Full Portfolio</span>
